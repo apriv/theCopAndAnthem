@@ -15,6 +15,8 @@
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
 		B10007AB226D3B3E008D7B42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007AA226D3B3D008D7B42 /* MenuViewController.swift */; };
 		B10007AF226D4ED8008D7B42 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007AE226D4ED7008D7B42 /* EndViewController.swift */; };
+		B10007B4226D594F008D7B42 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10007B3226D594F008D7B42 /* AVFoundation.framework */; };
+		B10007B6226D5D89008D7B42 /*  OldThreads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
 		B10007AA226D3B3D008D7B42 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B10007AE226D4ED7008D7B42 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		B10007B3226D594F008D7B42 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = " OldThreads.mp3"; path = "music/ OldThreads.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10007B4226D594F008D7B42 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 				11A26458226D03C2003DE61B /* ViewControllers */,
 				1106E5A2226BC9A800598DD0 /* the Cop and Anthem */,
 				1106E5A1226BC9A800598DD0 /* Products */,
+				B10007B2226D594D008D7B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +67,7 @@
 		1106E5A2226BC9A800598DD0 /* the Cop and Anthem */ = {
 			isa = PBXGroup;
 			children = (
+				B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */,
 				1106E5A3226BC9A800598DD0 /* AppDelegate.swift */,
 				1106E5A5226BC9A800598DD0 /* ViewController.swift */,
 				1106E5A7226BC9A800598DD0 /* Main.storyboard */,
@@ -80,6 +87,14 @@
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
+			sourceTree = "<group>";
+		};
+		B10007B2226D594D008D7B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B10007B3226D594F008D7B42 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +158,7 @@
 				1106E5AE226BC9AA00598DD0 /* LaunchScreen.storyboard in Resources */,
 				1106E5AB226BC9AA00598DD0 /* Assets.xcassets in Resources */,
 				1106E5A9226BC9A800598DD0 /* Main.storyboard in Resources */,
+				B10007B6226D5D89008D7B42 /*  OldThreads.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

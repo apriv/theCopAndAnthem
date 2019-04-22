@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var music:AVAudioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let AssortedMusics = Bundle.main.path(forResource: " OldThreads", ofType: ".mp3")
+        music = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: AssortedMusics!))
+        music.prepareToPlay()
+        music.numberOfLoops = -1
+        music.play()
     }
 
     @IBAction func NextScene(_ sender: Any) {

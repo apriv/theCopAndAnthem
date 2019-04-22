@@ -7,16 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class EndViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-    @IBAction func toTitle(_ sender: Any) {
+    
+        @IBAction func toTitle(_ sender: Any) {
         performSegue(withIdentifier: "toTitle1", sender: self)
     }
     
