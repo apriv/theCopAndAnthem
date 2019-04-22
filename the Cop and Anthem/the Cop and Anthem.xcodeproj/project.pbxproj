@@ -13,6 +13,7 @@
 		1106E5AB226BC9AA00598DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1106E5AA226BC9AA00598DD0 /* Assets.xcassets */; };
 		1106E5AE226BC9AA00598DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106E5AC226BC9AA00598DD0 /* LaunchScreen.storyboard */; };
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
+		B10007AB226D3B3E008D7B42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007AA226D3B3D008D7B42 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1106E5AD226BC9AA00598DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1106E5AF226BC9AA00598DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
+		B10007AA226D3B3D008D7B42 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				11A26459226D0434003DE61B /* StreetDayViewController.swift */,
+				B10007AA226D3B3D008D7B42 /* MenuViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
@@ -150,6 +153,7 @@
 				1106E5A6226BC9A800598DD0 /* ViewController.swift in Sources */,
 				1106E5A4226BC9A800598DD0 /* AppDelegate.swift in Sources */,
 				11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */,
+				B10007AB226D3B3E008D7B42 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
