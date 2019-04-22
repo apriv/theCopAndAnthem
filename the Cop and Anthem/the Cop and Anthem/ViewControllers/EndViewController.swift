@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  EndViewController.swift
 //  the Cop and Anthem
 //
 //  Created by Muzhen Li on 4/21/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class EndViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,13 +16,8 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func Back(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
     @IBAction func toTitle(_ sender: Any) {
-        performSegue(withIdentifier: "toTitle2", sender: self)
+        performSegue(withIdentifier: "toTitle1", sender: self)
     }
     
 

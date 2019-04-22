@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fM8-kc-E5s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,6 +33,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="NextScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fen-7q-5s3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBE-t3-Rvl">
                                 <rect key="frame" x="111" y="416" width="139" height="49"/>
@@ -47,6 +50,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="fM8-kc-E5s" kind="presentation" identifier="Segue1" id="E0a-cc-VWb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +108,7 @@
                     <connections>
                         <outlet property="textLabel" destination="slQ-HU-tFq" id="37j-qs-SCp"/>
                         <segue destination="gf9-bu-Fmh" kind="presentation" identifier="toMenu" id="w9u-R3-zj0"/>
+                        <segue destination="mqm-yW-tF0" kind="presentation" identifier="Segue2" id="YAw-ke-prt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF6-bw-MUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,10 +360,10 @@
             </objects>
             <point key="canvasLocation" x="1478" y="883"/>
         </scene>
-        <!--View Controller-->
+        <!--End View Controller-->
         <scene sceneID="mwW-fA-AhM">
             <objects>
-                <viewController id="LfT-nw-5k1" sceneMemberID="viewController">
+                <viewController id="LfT-nw-5k1" userLabel="End View Controller" customClass="EndViewController" customModule="the_Cop_and_Anthem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cTU-a7-g4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,15 +386,21 @@
                                 <state key="normal" title="Back to Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="toTitle:" destination="LfT-nw-5k1" eventType="touchUpInside" id="OJj-n8-8fw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="g2k-LA-W8r"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toTitle1" id="M1q-O0-vcS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ox-5R-PDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="883"/>
+            <point key="canvasLocation" x="2221.5999999999999" y="882.90854572713647"/>
         </scene>
         <!--Menu-->
         <scene sceneID="qhM-44-YOe">
@@ -420,6 +433,9 @@
                                 <state key="normal" title="Back to Title">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="toTitle:" destination="gf9-bu-Fmh" eventType="touchUpInside" id="LvC-7u-Wdy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXm-Vj-ceQ">
                                 <rect key="frame" x="27" y="20" width="42" height="35"/>
@@ -436,6 +452,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="cJU-T4-H4r"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toTtitle2" id="8C5-b2-UDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Foy-41-ZwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,4 +470,7 @@
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="M1q-O0-vcS"/>
+    </inferredMetricsTieBreakers>
 </document>

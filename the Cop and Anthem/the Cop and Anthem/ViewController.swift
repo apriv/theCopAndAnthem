@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func NextScene(_ sender: Any) {
+        performSegue(withIdentifier: "Segue1", sender: self)
+    }
+    
 }
 
