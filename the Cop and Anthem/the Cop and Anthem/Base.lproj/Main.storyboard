@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="-664"/>
+            <point key="canvasLocation" x="1670" y="-664"/>
         </scene>
         <!--Archive-->
         <scene sceneID="Akc-Km-Okg">
@@ -148,7 +148,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="KiF-br-ptJ" appends="YES" id="EHP-9f-0xC"/>
+                                    <outletCollection property="gestureRecognizers" destination="0g1-7Y-csg" appends="YES" id="jUh-q5-ggo"/>
                                 </connections>
                             </textView>
                         </subviews>
@@ -162,13 +162,16 @@
                         <viewLayoutGuide key="safeArea" id="IOY-3G-O99"/>
                     </view>
                     <connections>
+                        <outlet property="choice1" destination="QWt-L7-ayD" id="uIs-qm-uUD"/>
+                        <outlet property="choice2" destination="lbk-KT-urN" id="c0A-hk-O9S"/>
+                        <outlet property="tf" destination="BTK-br-A5t" id="wY4-9g-GaD"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="V59-Gh-2MS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF6-bw-MUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="KiF-br-ptJ">
+                <tapGestureRecognizer id="0g1-7Y-csg">
                     <connections>
-                        <action selector="touchText:" destination="fM8-kc-E5s" id="2Wu-pL-dMR"/>
+                        <action selector="tapText:" destination="fM8-kc-E5s" id="IPz-RM-5Jv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -687,6 +690,6 @@
         <image name="street_night" width="556" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V59-Gh-2MS"/>
+        <segue reference="Cr9-bb-4pO"/>
     </inferredMetricsTieBreakers>
 </document>
