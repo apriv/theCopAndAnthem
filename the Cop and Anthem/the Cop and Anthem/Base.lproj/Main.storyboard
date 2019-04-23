@@ -366,7 +366,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsH-aQ-8BW">
-                                <rect key="frame" x="41" y="301" width="292" height="36"/>
+                                <rect key="frame" x="16" y="573" width="151" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -378,7 +378,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-9G-XJ2">
-                                <rect key="frame" x="41" y="273" width="292" height="36"/>
+                                <rect key="frame" x="41" y="300" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -390,7 +390,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-nn-gM1">
-                                <rect key="frame" x="41" y="370" width="292" height="36"/>
+                                <rect key="frame" x="220" y="573" width="148" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -402,7 +402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQO-fT-Uaf">
-                                <rect key="frame" x="41" y="403" width="292" height="36"/>
+                                <rect key="frame" x="41" y="335" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -413,6 +413,14 @@
                                     <segue destination="PwD-z1-Cfd" kind="show" id="3dy-Nm-FNa"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-an-cW5">
+                                <rect key="frame" x="-40" y="238" width="207" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="fDP-go-4DN">
+                                <rect key="frame" x="193" y="238" width="182" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -427,6 +435,8 @@
                         <outlet property="checkoutBtn" destination="FPZ-9G-XJ2" id="Ye7-oc-8vc"/>
                         <outlet property="choice1" destination="UsH-aQ-8BW" id="yZA-Ig-4Vg"/>
                         <outlet property="choice2" destination="HSS-nn-gM1" id="Bu9-Un-k0f"/>
+                        <outlet property="lady1" destination="G5G-an-cW5" id="HPi-JA-cBU"/>
+                        <outlet property="lady2" destination="fDP-go-4DN" id="C3Q-uD-i47"/>
                         <outlet property="tf" destination="2eB-FB-Fta" id="rw3-Co-Pys"/>
                         <outlet property="tryElseBtn" destination="GQO-fT-Uaf" id="e5a-IB-8Rc"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Ki6-w7-och"/>
@@ -793,9 +803,11 @@
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
+        <image name="women_austere" width="387.33334350585938" height="595.33331298828125"/>
+        <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EXQ-3t-d1s"/>
-        <segue reference="td0-9Z-afw"/>
+        <segue reference="Ki6-w7-och"/>
+        <segue reference="3dy-Nm-FNa"/>
     </inferredMetricsTieBreakers>
 </document>

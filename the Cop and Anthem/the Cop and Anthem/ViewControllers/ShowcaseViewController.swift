@@ -15,7 +15,8 @@ class ShowcaseViewController: UIViewController {
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var tf: UITextView!
-    
+    @IBOutlet weak var lady1: UIImageView!
+    @IBOutlet weak var lady2: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,8 @@ class ShowcaseViewController: UIViewController {
             self.tryElseBtn.isHidden = true
             self.checkoutBtn.isHidden = false
             tf.text = "Check it out"
+            self.lady1.isHidden = true
+            self.lady2.isHidden = true
         case 1:
             // waiter talk
             self.choice1.isHidden = false
@@ -48,6 +51,8 @@ class ShowcaseViewController: UIViewController {
             choice1.setTitle("Lady #1", for: .normal)
             choice2.setTitle("Lady #2", for: .normal)
             tf.text = "Which one are you goin for"
+            self.lady1.isHidden = false
+            self.lady2.isHidden = false
         case 2:
             //lady 1
             tf.text = "Lady 1: Com'on Baby."
@@ -55,6 +60,8 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.checkoutBtn.isHidden = true
+            self.lady1.isHidden = false
+            self.lady2.isHidden = true
         case 3:
             // lady 2
             tf.text = "Lady 2: Com'on Baby."
@@ -62,6 +69,8 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.checkoutBtn.isHidden = true
+            self.lady1.isHidden = true
+            self.lady2.isHidden = false
         default:
             // do nothing
             break
