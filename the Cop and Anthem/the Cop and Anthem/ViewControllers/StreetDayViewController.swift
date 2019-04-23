@@ -26,7 +26,7 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
     // function used for swipe back to menu 
     @objc func handleSwipe(sender:UISwipeGestureRecognizer){
         if (sender.state == .ended){
-            performSegue(withIdentifier: "toMenu", sender: self)
+            performSegue(withIdentifier: "toTab", sender: self)
         }
     }
     
