@@ -186,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prinson_broken" translatesAutoresizingMaskIntoConstraints="NO" id="IxT-v1-IIt">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" text="What do you want to try next to get yourself in prison?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-0P-oB9">
                                 <rect key="frame" x="46" y="117" width="283" height="64"/>
@@ -256,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-i0-3B9">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-7y-Hku">
                                 <rect key="frame" x="52" y="107" width="292" height="128"/>
@@ -446,7 +446,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="Ra0-LA-reG">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-y1-0D1">
                                 <rect key="frame" x="41" y="110" width="292" height="128"/>
@@ -556,7 +556,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="s0W-t1-xFx">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cja-ki-7qG">
                                 <rect key="frame" x="41" y="113" width="292" height="128"/>
@@ -690,6 +690,6 @@
         <image name="street_night" width="556" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
+        <segue reference="V59-Gh-2MS"/>
     </inferredMetricsTieBreakers>
 </document>

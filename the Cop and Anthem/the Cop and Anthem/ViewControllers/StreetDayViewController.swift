@@ -11,6 +11,15 @@ import UIKit
 class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
     
     var stage = 0 // to control stage
+    var count = 0
+    let text = ["A dead leaf fell at your feet.",
+                "This is a sign that winter is coming",
+                "You used to live on the bench at Madison square, but now, you need another place to stay.",
+                "3 month in the prison on the island could be a good choice.",
+                "This means 3 month of food every day and bed every night.",
+                "You come to the street.",
+                "There are many ways of doing this so that cop arrrest you to the jail"]
+    lazy var size = text.count
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var tf: UITextView!
@@ -37,7 +46,7 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             print("stage is 0" )
-            tf.text = "It's winter and it's cold."
+            tf.text = text[count]
         case 1:
             // show choices
             self.choice1.isHidden = false
@@ -60,10 +69,13 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
 
     @IBAction func tapText(_ sender: UITapGestureRecognizer) {
         print("text tapped")
-        if (stage<3){
-            stage = stage+1
-            gotoStage()
+        if (count<size-1){
+            count = count+1
         }
+        else{
+            stage = 1
+        }
+        gotoStage()
     }
     
     
