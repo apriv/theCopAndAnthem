@@ -9,7 +9,12 @@
 import UIKit
 
 class ShowcaseGirlViewController: UIViewController {
-
+    var stage = 0
+    @IBOutlet weak var doBtn: UIButton!
+    @IBOutlet weak var doElseBtn: UIButton!
+    @IBOutlet weak var tf: UITextView!
+    @IBOutlet weak var breakLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +25,31 @@ class ShowcaseGirlViewController: UIViewController {
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
         
+        gotoStage()
+    }
+    // do stuff accoring int stage
+    func gotoStage(){
+        switch stage{
+        case 0:
+            // hide choices
+            tf.text = "You see a glass, breaking it may get you in prison."
+            doElseBtn.isHidden = true
+            breakLabel.isHidden = true
+        case 1:
+            tf.text = "No Text"
+            tf.isHidden = true
+            doBtn.isHidden = true
+            doElseBtn.isHidden = true
+            breakLabel.isHidden = false
+        case 2:
+            tf.isHidden = false
+            doElseBtn.isHidden = false
+            doBtn.isHidden = true
+            breakLabel.isHidden = true
+        default:
+            // do nothing
+            break
+        }
     }
     
     // function used for swipe back to menu
@@ -28,6 +58,12 @@ class ShowcaseGirlViewController: UIViewController {
             performSegue(withIdentifier: "toMenu", sender: self)
         }
     }
+    
+    @IBAction func doPressed(_ sender: UIButton) {
+        stage = 1
+        gotoStage()
+    }
+    
 
     
 

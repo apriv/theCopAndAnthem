@@ -45,14 +45,12 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
             // hide choices
             self.choice1.isHidden = true
             self.choice2.isHidden = true
-            print("stage is 0" )
             tf.text = text[count]
         case 1:
             // show choices
             self.choice1.isHidden = false
             choice1.setTitle("try something", for: .normal)
             //self.choice2.isHidden = false
-            print("stage is 1")
             tf.text = text[count]
         default:
             // do nothing
@@ -68,7 +66,6 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     @IBAction func tapText(_ sender: UITapGestureRecognizer) {
-        print("text tapped")
         if (count<size-1){
             count = count+1
         }

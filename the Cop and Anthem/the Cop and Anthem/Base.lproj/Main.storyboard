@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="880"/>
+            <point key="canvasLocation" x="1812" y="1252"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="tk7-6F-H4h">
@@ -581,24 +581,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlB-Zy-zmd">
-                                <rect key="frame" x="41" y="290" width="292" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O84-tV-6vQ">
+                                <rect key="frame" x="41" y="282" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 1">
+                                <state key="normal" title="Do it!">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="doPressed:" destination="tvj-Mq-EKs" eventType="touchUpInside" id="vUd-k3-NMT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksB-PH-3CN">
-                                <rect key="frame" x="41" y="359" width="292" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-Iq-7Qi">
+                                <rect key="frame" x="41" y="365" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 2">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="walk away">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PwD-z1-Cfd" kind="show" id="td0-9Z-afw"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to break it!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-Na-eDw">
+                                <rect key="frame" x="66" y="572" width="134" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -610,6 +623,10 @@
                         <viewLayoutGuide key="safeArea" id="5NA-Kd-E2n"/>
                     </view>
                     <connections>
+                        <outlet property="breakLabel" destination="5AK-Na-eDw" id="FjG-5D-3lU"/>
+                        <outlet property="doBtn" destination="O84-tV-6vQ" id="IuY-pe-7G7"/>
+                        <outlet property="doElseBtn" destination="xnh-Iq-7Qi" id="8Gn-BC-skS"/>
+                        <outlet property="tf" destination="85F-YY-UmR" id="Z9x-aN-zun"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="EXQ-3t-d1s"/>
                     </connections>
                 </viewController>
@@ -760,8 +777,7 @@
         <image name="street_night" width="556" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BSS-2Z-s3H"/>
-        <segue reference="vNV-GN-mca"/>
-        <segue reference="3dy-Nm-FNa"/>
+        <segue reference="EXQ-3t-d1s"/>
+        <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>
 </document>
