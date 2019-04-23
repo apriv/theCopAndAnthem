@@ -12,11 +12,18 @@
 		1106E5A9226BC9A800598DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106E5A7226BC9A800598DD0 /* Main.storyboard */; };
 		1106E5AB226BC9AA00598DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1106E5AA226BC9AA00598DD0 /* Assets.xcassets */; };
 		1106E5AE226BC9AA00598DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106E5AC226BC9AA00598DD0 /* LaunchScreen.storyboard */; };
+		117D1791226E170500ED9835 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D1790226E170500ED9835 /* RestaurantViewController.swift */; };
+		117D1793226E18B000ED9835 /* ShowcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D1792226E18B000ED9835 /* ShowcaseViewController.swift */; };
+		117D1795226E18DA00ED9835 /* StreetNightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D1794226E18DA00ED9835 /* StreetNightViewController.swift */; };
+		117D1797226E18FC00ED9835 /* CigarShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D1796226E18FC00ED9835 /* CigarShopViewController.swift */; };
+		117D1799226E192000ED9835 /* ShowcaseGirlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D1798226E192000ED9835 /* ShowcaseGirlViewController.swift */; };
+		117D179B226E194A00ED9835 /* CathedralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D179A226E194A00ED9835 /* CathedralViewController.swift */; };
+		117D179D226E195500ED9835 /* PrisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D179C226E195500ED9835 /* PrisonViewController.swift */; };
+		117D17A1226E213E00ED9835 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17A0226E213E00ED9835 /* AboutUsViewController.swift */; };
+		117D17A3226E21C800ED9835 /* ArchiveCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17A2226E21C800ED9835 /* ArchiveCollectionViewController.swift */; };
+		117D17A5226E434B00ED9835 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17A4226E434B00ED9835 /* SelectionViewController.swift */; };
+		117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */; };
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
-		B10007AB226D3B3E008D7B42 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007AA226D3B3D008D7B42 /* MenuViewController.swift */; };
-		B10007AF226D4ED8008D7B42 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007AE226D4ED7008D7B42 /* EndViewController.swift */; };
-		B10007B4226D594F008D7B42 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10007B3226D594F008D7B42 /* AVFoundation.framework */; };
-		B10007B6226D5D89008D7B42 /*  OldThreads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +34,18 @@
 		1106E5AA226BC9AA00598DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1106E5AD226BC9AA00598DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1106E5AF226BC9AA00598DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117D1790226E170500ED9835 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		117D1792226E18B000ED9835 /* ShowcaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseViewController.swift; sourceTree = "<group>"; };
+		117D1794226E18DA00ED9835 /* StreetNightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetNightViewController.swift; sourceTree = "<group>"; };
+		117D1796226E18FC00ED9835 /* CigarShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CigarShopViewController.swift; sourceTree = "<group>"; };
+		117D1798226E192000ED9835 /* ShowcaseGirlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseGirlViewController.swift; sourceTree = "<group>"; };
+		117D179A226E194A00ED9835 /* CathedralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathedralViewController.swift; sourceTree = "<group>"; };
+		117D179C226E195500ED9835 /* PrisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonViewController.swift; sourceTree = "<group>"; };
+		117D17A0226E213E00ED9835 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		117D17A2226E21C800ED9835 /* ArchiveCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveCollectionViewController.swift; sourceTree = "<group>"; };
+		117D17A4226E434B00ED9835 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceUiTableView.swift; sourceTree = "<group>"; };
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
-		B10007AA226D3B3D008D7B42 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		B10007AE226D4ED7008D7B42 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
-		B10007B3226D594F008D7B42 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = " OldThreads.mp3"; path = "music/ OldThreads.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10007B4226D594F008D7B42 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +65,6 @@
 				11A26458226D03C2003DE61B /* ViewControllers */,
 				1106E5A2226BC9A800598DD0 /* the Cop and Anthem */,
 				1106E5A1226BC9A800598DD0 /* Products */,
-				B10007B2226D594D008D7B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +79,6 @@
 		1106E5A2226BC9A800598DD0 /* the Cop and Anthem */ = {
 			isa = PBXGroup;
 			children = (
-				B10007B5226D5D89008D7B42 /*  OldThreads.mp3 */,
 				1106E5A3226BC9A800598DD0 /* AppDelegate.swift */,
 				1106E5A5226BC9A800598DD0 /* ViewController.swift */,
 				1106E5A7226BC9A800598DD0 /* Main.storyboard */,
@@ -81,20 +92,21 @@
 		11A26458226D03C2003DE61B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */,
 				11A26459226D0434003DE61B /* StreetDayViewController.swift */,
-				B10007AA226D3B3D008D7B42 /* MenuViewController.swift */,
-				B10007AE226D4ED7008D7B42 /* EndViewController.swift */,
+				117D1790226E170500ED9835 /* RestaurantViewController.swift */,
+				117D1792226E18B000ED9835 /* ShowcaseViewController.swift */,
+				117D1794226E18DA00ED9835 /* StreetNightViewController.swift */,
+				117D1796226E18FC00ED9835 /* CigarShopViewController.swift */,
+				117D1798226E192000ED9835 /* ShowcaseGirlViewController.swift */,
+				117D179A226E194A00ED9835 /* CathedralViewController.swift */,
+				117D179C226E195500ED9835 /* PrisonViewController.swift */,
+				117D17A2226E21C800ED9835 /* ArchiveCollectionViewController.swift */,
+				117D17A0226E213E00ED9835 /* AboutUsViewController.swift */,
+				117D17A4226E434B00ED9835 /* SelectionViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
-			sourceTree = "<group>";
-		};
-		B10007B2226D594D008D7B42 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B10007B3226D594F008D7B42 /* AVFoundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +170,6 @@
 				1106E5AE226BC9AA00598DD0 /* LaunchScreen.storyboard in Resources */,
 				1106E5AB226BC9AA00598DD0 /* Assets.xcassets in Resources */,
 				1106E5A9226BC9A800598DD0 /* Main.storyboard in Resources */,
-				B10007B6226D5D89008D7B42 /*  OldThreads.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,11 +180,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117D1793226E18B000ED9835 /* ShowcaseViewController.swift in Sources */,
+				117D179D226E195500ED9835 /* PrisonViewController.swift in Sources */,
+				117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */,
 				1106E5A6226BC9A800598DD0 /* ViewController.swift in Sources */,
-				B10007AF226D4ED8008D7B42 /* EndViewController.swift in Sources */,
+				117D17A5226E434B00ED9835 /* SelectionViewController.swift in Sources */,
+				117D17A1226E213E00ED9835 /* AboutUsViewController.swift in Sources */,
+				117D17A3226E21C800ED9835 /* ArchiveCollectionViewController.swift in Sources */,
+				117D1799226E192000ED9835 /* ShowcaseGirlViewController.swift in Sources */,
+				117D1791226E170500ED9835 /* RestaurantViewController.swift in Sources */,
 				1106E5A4226BC9A800598DD0 /* AppDelegate.swift in Sources */,
+				117D1795226E18DA00ED9835 /* StreetNightViewController.swift in Sources */,
+				117D1797226E18FC00ED9835 /* CigarShopViewController.swift in Sources */,
+				117D179B226E194A00ED9835 /* CathedralViewController.swift in Sources */,
 				11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */,
-				B10007AB226D3B3E008D7B42 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
