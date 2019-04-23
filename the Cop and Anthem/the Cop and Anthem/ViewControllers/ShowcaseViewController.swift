@@ -15,6 +15,8 @@ class ShowcaseViewController: UIViewController {
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
     @IBOutlet weak var tf: UITextView!
+    @IBOutlet weak var lady1: UIImageView!
+    @IBOutlet weak var lady2: UIImageView!
     
 
     override func viewDidLoad() {
@@ -38,15 +40,19 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = true
             self.checkoutBtn.isHidden = false
+            self.lady1.isHidden = true
+            self.lady2.isHidden = true
             tf.text = "Check it out"
         case 1:
-            // waiter talk
+            // wait to choose
             self.choice1.isHidden = false
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.checkoutBtn.isHidden = true
             choice1.setTitle("Lady #1", for: .normal)
             choice2.setTitle("Lady #2", for: .normal)
+            self.lady1.isHidden = false
+            self.lady2.isHidden = false
             tf.text = "Which one are you goin for"
         case 2:
             //lady 1
@@ -55,6 +61,8 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.checkoutBtn.isHidden = true
+            self.lady1.isHidden = false
+            self.lady2.isHidden = true
         case 3:
             // lady 2
             tf.text = "Lady 2: Com'on Baby."
@@ -62,6 +70,8 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.checkoutBtn.isHidden = true
+            self.lady1.isHidden = true
+            self.lady2.isHidden = false
         default:
             // do nothing
             break
@@ -73,12 +83,22 @@ class ShowcaseViewController: UIViewController {
         gotoStage()
     }
     
+    // lady 1
     @IBAction func lady1chosen(_ sender: UIButton) {
         stage = 2
         gotoStage()
     }
+    @IBAction func lady1Pinched(_ sender: UIPinchGestureRecognizer) {
+        stage = 2
+        gotoStage()
+    }
     
+    // lady 2
     @IBAction func lady2chosen(_ sender: UIButton) {
+        stage = 3
+        gotoStage()
+    }
+    @IBAction func lady2Pinched(_ sender: UIPinchGestureRecognizer) {
         stage = 3
         gotoStage()
     }
