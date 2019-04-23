@@ -275,6 +275,18 @@
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-xX-Z1e">
+                                <rect key="frame" x="52" y="261" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Step inside">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stepInsidePressed:" destination="mqm-yW-tF0" eventType="touchUpInside" id="E7k-0y-lJ0"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-Ad-AL8">
                                 <rect key="frame" x="52" y="363" width="292" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -283,6 +295,18 @@
                                 <state key="normal" title="Choice 2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buf-jW-NDh">
+                                <rect key="frame" x="52" y="393" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Try Something Else">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PwD-z1-Cfd" kind="show" id="kJU-rm-7jU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -295,6 +319,11 @@
                         <viewLayoutGuide key="safeArea" id="fNB-bW-Jz3"/>
                     </view>
                     <connections>
+                        <outlet property="choice1" destination="7mO-1E-qHF" id="8wS-hK-JEg"/>
+                        <outlet property="choice2" destination="IQa-Ad-AL8" id="wWJ-So-s7S"/>
+                        <outlet property="stepInsideBtn" destination="jUT-xX-Z1e" id="DIQ-hX-Qn5"/>
+                        <outlet property="tf" destination="xc3-7y-Hku" id="LQW-Xg-GEg"/>
+                        <outlet property="tryElseBtn" destination="buf-jW-NDh" id="pn3-Ko-wgB"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Cr9-bb-4pO"/>
                     </connections>
                 </viewController>
@@ -691,5 +720,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Cr9-bb-4pO"/>
+        <segue reference="kJU-rm-7jU"/>
     </inferredMetricsTieBreakers>
 </document>
