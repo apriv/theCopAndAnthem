@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3108" y="-874"/>
+            <point key="canvasLocation" x="1703" y="-664"/>
         </scene>
         <!--Archive-->
         <scene sceneID="Akc-Km-Okg">
@@ -101,7 +101,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLc-o1-eyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="-874"/>
+            <point key="canvasLocation" x="521" y="-664"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1713" y="881"/>
+            <point key="canvasLocation" x="1670" y="880"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="tk7-6F-H4h">
@@ -377,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKC-aj-Mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4618" y="-911"/>
+            <point key="canvasLocation" x="2983" y="-664"/>
         </scene>
         <!--Street Night-->
         <scene sceneID="CDB-ma-pb9">
@@ -673,7 +673,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06k-D4-bLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2713" y="-1857"/>
+            <point key="canvasLocation" x="2642" y="-1657"/>
         </scene>
     </scenes>
     <resources>
@@ -687,6 +687,6 @@
         <image name="street_night" width="556" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ki6-w7-och"/>
+        <segue reference="V59-Gh-2MS"/>
     </inferredMetricsTieBreakers>
 </document>
