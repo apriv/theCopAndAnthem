@@ -14,14 +14,27 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set gesture to menu
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(rightSwipe)
+        view.addGestureRecognizer(upSwipe)
+
     }
     
-    @IBAction func swipeRight(_ sender: UISwipeGestureRecognizer) {
-        tabBarController?.selectedIndex=1
-        
+    // function used for swipe back to menu 
+    @objc func handleSwipe(sender:UISwipeGestureRecognizer){
+        if (sender.state == .ended){
+            performSegue(withIdentifier: "toMenu", sender: self)
+        }
     }
     
+    
+    // if text is touched
+    @IBAction func touchText(_ sender: UITapGestureRecognizer) {
+        // next text
+    }
     
     /*
     // MARK: - Navigation

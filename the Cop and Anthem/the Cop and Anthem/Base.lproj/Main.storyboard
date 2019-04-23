@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Begin Journey"/>
                                 <connections>
-                                    <segue destination="fM8-kc-E5s" kind="show" id="isz-S7-ju2"/>
+                                    <segue destination="fM8-kc-E5s" kind="show" identifier="toMenu" id="isz-S7-ju2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984.79999999999995" y="86.806596701649184"/>
+            <point key="canvasLocation" x="3108" y="-874"/>
         </scene>
         <!--Archive-->
         <scene sceneID="Akc-Km-Okg">
@@ -101,7 +101,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLc-o1-eyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="344.80000000000001" y="-267.61619190404798"/>
+            <point key="canvasLocation" x="1532" y="-874"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -117,9 +117,6 @@
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="OsS-x9-bC6" appends="YES" id="juV-DT-KKS"/>
-                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWt-L7-ayD">
                                 <rect key="frame" x="41" y="294" width="292" height="32"/>
@@ -146,9 +143,13 @@
                                 <rect key="frame" x="41" y="107" width="292" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KiF-br-ptJ" appends="YES" id="EHP-9f-0xC"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,13 +161,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IOY-3G-O99"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="xAN-fc-TiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF6-bw-MUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="OsS-x9-bC6">
+                <tapGestureRecognizer id="KiF-br-ptJ">
                     <connections>
-                        <action selector="swipeRight:" destination="fM8-kc-E5s" id="cnx-Vf-qB6"/>
+                        <action selector="touchText:" destination="fM8-kc-E5s" id="2Wu-pL-dMR"/>
                     </connections>
-                </swipeGestureRecognizer>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1712.8" y="86.806596701649184"/>
         </scene>
@@ -233,11 +237,12 @@
                         <segue destination="OED-mk-yGd" kind="show" identifier="toCigarShop" id="knp-4e-Ec6"/>
                         <segue destination="tvj-Mq-EKs" kind="show" identifier="toShowcase2" id="pYO-gH-tok"/>
                         <segue destination="KJk-tn-EjK" kind="show" identifier="toCathedral" id="oiu-D3-hZs"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="Kb2-QU-bgv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="-815"/>
+            <point key="canvasLocation" x="1713" y="881"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="tk7-6F-H4h">
@@ -286,6 +291,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fNB-bW-Jz3"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="BwZ-t0-VjX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4a-XI-R4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,6 +346,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Us6-Bm-VyR"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="K0V-he-L4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bs-XZ-hDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKC-aj-Mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321" y="690"/>
+            <point key="canvasLocation" x="4618" y="-911"/>
         </scene>
         <!--Street Night-->
         <scene sceneID="CDB-ma-pb9">
@@ -415,6 +426,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sKT-Dd-OkG"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="Lkq-Fg-yzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxi-WJ-XcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -467,6 +481,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cMZ-an-7RO"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="n0P-9b-5tR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCA-lC-HbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,6 +536,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5NA-Kd-E2n"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="QA2-5m-spY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAp-TY-KZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -571,6 +591,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SMJ-c2-UHt"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="DfK-3q-x43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-0O-59W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -623,6 +646,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oCG-Qo-lP9"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenu" id="Hgr-Is-79Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgd-Jn-Ogj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -647,7 +673,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06k-D4-bLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="378"/>
+            <point key="canvasLocation" x="3108" y="-1877"/>
         </scene>
     </scenes>
     <resources>
@@ -660,4 +686,7 @@
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kb2-QU-bgv"/>
+    </inferredMetricsTieBreakers>
 </document>

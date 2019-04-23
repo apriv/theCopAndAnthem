@@ -13,8 +13,22 @@ class CigarShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set gesture to menu
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(rightSwipe)
+        view.addGestureRecognizer(upSwipe)
+        
     }
+    
+    // function used for swipe back to menu
+    @objc func handleSwipe(sender:UISwipeGestureRecognizer){
+        if (sender.state == .ended){
+            performSegue(withIdentifier: "toMenu", sender: self)
+        }
+    }
+
     
 
     /*

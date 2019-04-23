@@ -70,7 +70,24 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         // This view controller itself will provide the delegate methods and row data for the table view.
         Cells.delegate = self
         Cells.dataSource = self
+        
+        
+        // Set gesture to menu
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(rightSwipe)
+        view.addGestureRecognizer(upSwipe)
+        
     }
+    
+    // function used for swipe back to menu
+    @objc func handleSwipe(sender:UISwipeGestureRecognizer){
+        if (sender.state == .ended){
+            performSegue(withIdentifier: "toMenu", sender: self)
+        }
+    }
+
     
 
     /*
