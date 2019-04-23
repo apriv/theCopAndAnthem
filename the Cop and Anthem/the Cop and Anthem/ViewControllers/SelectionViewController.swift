@@ -42,7 +42,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
             performSegue(withIdentifier: "toRestaurant", sender: self)
         }
         else if (indexPath.row == 1){
-            performSegue(withIdentifier: "toShowcase", sender: self)
+            performSegue(withIdentifier: "toShowcase2", sender: self)
         }
         else if (indexPath.row == 2){
             performSegue(withIdentifier: "toStreetNight", sender: self)
@@ -51,7 +51,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
             performSegue(withIdentifier: "toCigarShop", sender: self)
         }
         else if (indexPath.row == 4){
-            performSegue(withIdentifier: "toShowcase2", sender: self)
+            performSegue(withIdentifier: "toShowcase", sender: self)
         }
         else if (indexPath.row == 5){
             performSegue(withIdentifier: "toCathedral", sender: self)
