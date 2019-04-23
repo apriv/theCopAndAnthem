@@ -715,7 +715,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-0O-59W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6791" y="87"/>
+            <point key="canvasLocation" x="6924" y="109"/>
         </scene>
         <!--Cathedral-->
         <scene sceneID="jeQ-7B-V1T">
@@ -737,22 +737,52 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-Fl-WcO">
-                                <rect key="frame" x="41" y="293" width="292" height="32"/>
+                                <rect key="frame" x="41" y="294" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 1">
+                                <state key="normal" title="Nothing">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="c1Pressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="flA-gB-2GU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-5Z-FRK">
-                                <rect key="frame" x="41" y="362" width="292" height="32"/>
+                                <rect key="frame" x="41" y="360" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 2">
+                                <state key="normal" title="Confessing">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="c2Pressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="NI7-aE-v3d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5K-89-Cpx">
+                                <rect key="frame" x="41" y="329" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Follow Cop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d1G-6D-BUc" kind="show" id="XLF-VK-sPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-3W-Uow">
+                                <rect key="frame" x="41" y="250" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go inside">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goInsidePressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="d0Y-U7-J6m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -765,6 +795,11 @@
                         <viewLayoutGuide key="safeArea" id="oCG-Qo-lP9"/>
                     </view>
                     <connections>
+                        <outlet property="choice1" destination="v7t-Fl-WcO" id="OoP-H0-zdh"/>
+                        <outlet property="choice2" destination="SaG-5Z-FRK" id="cQd-ak-Aig"/>
+                        <outlet property="followCop" destination="G5K-89-Cpx" id="0dR-Jx-v61"/>
+                        <outlet property="goInside" destination="cUP-3W-Uow" id="BeI-wr-Ssc"/>
+                        <outlet property="tf" destination="YYX-OE-vNB" id="7YZ-8N-qZD"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="IoL-W4-Ye0"/>
                     </connections>
                 </viewController>
@@ -807,7 +842,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ki6-w7-och"/>
+        <segue reference="IoL-W4-Ye0"/>
         <segue reference="3dy-Nm-FNa"/>
     </inferredMetricsTieBreakers>
 </document>
