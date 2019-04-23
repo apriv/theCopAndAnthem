@@ -614,13 +614,16 @@
                                     <segue destination="PwD-z1-Cfd" kind="show" id="td0-9Z-afw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to break it!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-Na-eDw">
-                                <rect key="frame" x="66" y="572" width="134" height="26"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBH-nq-5Lj">
+                                <rect key="frame" x="0.0" y="97" width="375" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Break it!"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="orG-9B-BaT" appends="YES" id="SXK-7u-62J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -632,16 +635,22 @@
                         <viewLayoutGuide key="safeArea" id="5NA-Kd-E2n"/>
                     </view>
                     <connections>
-                        <outlet property="breakLabel" destination="5AK-Na-eDw" id="FjG-5D-3lU"/>
+                        <outlet property="bgimg" destination="bux-EY-6df" id="Kbq-Gd-bU6"/>
                         <outlet property="doBtn" destination="O84-tV-6vQ" id="IuY-pe-7G7"/>
                         <outlet property="doElseBtn" destination="xnh-Iq-7Qi" id="8Gn-BC-skS"/>
+                        <outlet property="glass" destination="tBH-nq-5Lj" id="7W4-XV-hT3"/>
                         <outlet property="tf" destination="85F-YY-UmR" id="Z9x-aN-zun"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="EXQ-3t-d1s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAp-TY-KZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="6" id="orG-9B-BaT">
+                    <connections>
+                        <action selector="tabbing:" destination="tvj-Mq-EKs" id="aKx-jX-MI7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5374" y="87"/>
+            <point key="canvasLocation" x="5373.6000000000004" y="86.806596701649184"/>
         </scene>
         <!--Prison-->
         <scene sceneID="a1Y-CD-PbX">

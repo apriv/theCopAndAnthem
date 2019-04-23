@@ -13,7 +13,8 @@ class ShowcaseGirlViewController: UIViewController {
     @IBOutlet weak var doBtn: UIButton!
     @IBOutlet weak var doElseBtn: UIButton!
     @IBOutlet weak var tf: UITextView!
-    @IBOutlet weak var breakLabel: UILabel!
+    @IBOutlet weak var glass: UIButton!
+    @IBOutlet weak var bgimg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +35,18 @@ class ShowcaseGirlViewController: UIViewController {
             // hide choices
             tf.text = "You see a glass, breaking it may get you in prison."
             doElseBtn.isHidden = true
-            breakLabel.isHidden = true
+            glass.isHidden = true
         case 1:
             tf.text = "No Text"
             tf.isHidden = true
             doBtn.isHidden = true
             doElseBtn.isHidden = true
-            breakLabel.isHidden = false
+            glass.isHidden = false
         case 2:
             tf.isHidden = false
             doElseBtn.isHidden = false
             doBtn.isHidden = true
-            breakLabel.isHidden = true
+            glass.isHidden = true
         default:
             // do nothing
             break
@@ -64,7 +65,12 @@ class ShowcaseGirlViewController: UIViewController {
         gotoStage()
     }
     
-
+    @IBAction func tabbing(_ sender: UITapGestureRecognizer) {
+        stage = 2
+        bgimg.image = UIImage(named:"showcase_broken")
+        gotoStage()
+    }
+    
     
 
     /*
