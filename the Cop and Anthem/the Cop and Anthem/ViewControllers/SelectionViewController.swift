@@ -40,7 +40,21 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         print("You tapped cell number \(indexPath.row).")
         if (indexPath.row == 0){
             performSegue(withIdentifier: "toRestaurant", sender: self)
-            print("You tapped dine and dash.")
+        }
+        else if (indexPath.row == 1){
+            performSegue(withIdentifier: "toShowcase", sender: self)
+        }
+        else if (indexPath.row == 2){
+            performSegue(withIdentifier: "toStreetNight", sender: self)
+        }
+        else if (indexPath.row == 3){
+            performSegue(withIdentifier: "toCigarShop", sender: self)
+        }
+        else if (indexPath.row == 4){
+            performSegue(withIdentifier: "toShowcase2", sender: self)
+        }
+        else if (indexPath.row == 5){
+            performSegue(withIdentifier: "toCathedral", sender: self)
         }
     }
     
