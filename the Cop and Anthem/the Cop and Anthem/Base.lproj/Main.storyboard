@@ -318,6 +318,10 @@
                                     <action selector="stepInsidePressed:" destination="mqm-yW-tF0" eventType="touchUpInside" id="E7k-0y-lJ0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waiter" translatesAutoresizingMaskIntoConstraints="NO" id="07u-fa-CRB">
+                                <rect key="frame" x="-35" y="393" width="250" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -334,6 +338,7 @@
                         <outlet property="stepInsideBtn" destination="jUT-xX-Z1e" id="DIQ-hX-Qn5"/>
                         <outlet property="tf" destination="xc3-7y-Hku" id="LQW-Xg-GEg"/>
                         <outlet property="tryElseBtn" destination="buf-jW-NDh" id="pn3-Ko-wgB"/>
+                        <outlet property="waiter" destination="07u-fa-CRB" id="ckw-AV-ueJ"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Cr9-bb-4pO"/>
                     </connections>
                 </viewController>
@@ -793,9 +798,10 @@
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
+        <image name="waiter" width="304" height="474.33334350585938"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EXQ-3t-d1s"/>
-        <segue reference="td0-9Z-afw"/>
+        <segue reference="Cr9-bb-4pO"/>
+        <segue reference="kJU-rm-7jU"/>
     </inferredMetricsTieBreakers>
 </document>
