@@ -826,19 +826,11 @@
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
-<<<<<<< HEAD
         <image name="women_austere" width="387.33334350585938" height="595.33331298828125"/>
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ki6-w7-och"/>
         <segue reference="3dy-Nm-FNa"/>
-=======
-        <image name="waiter" width="304" height="474.33334350585938"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
-        <segue reference="kJU-rm-7jU"/>
->>>>>>> 38823d647edbf88e2d12ae166d82002eda2786be
     </inferredMetricsTieBreakers>
 </document>
