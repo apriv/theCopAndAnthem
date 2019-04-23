@@ -318,10 +318,6 @@
                                     <action selector="stepInsidePressed:" destination="mqm-yW-tF0" eventType="touchUpInside" id="E7k-0y-lJ0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waiter" translatesAutoresizingMaskIntoConstraints="NO" id="07u-fa-CRB">
-                                <rect key="frame" x="-35" y="393" width="250" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -338,7 +334,6 @@
                         <outlet property="stepInsideBtn" destination="jUT-xX-Z1e" id="DIQ-hX-Qn5"/>
                         <outlet property="tf" destination="xc3-7y-Hku" id="LQW-Xg-GEg"/>
                         <outlet property="tryElseBtn" destination="buf-jW-NDh" id="pn3-Ko-wgB"/>
-                        <outlet property="waiter" destination="07u-fa-CRB" id="ckw-AV-ueJ"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Cr9-bb-4pO"/>
                     </connections>
                 </viewController>
@@ -371,7 +366,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsH-aQ-8BW">
-                                <rect key="frame" x="8" y="590" width="136" height="45"/>
+                                <rect key="frame" x="41" y="301" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -395,7 +390,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-nn-gM1">
-                                <rect key="frame" x="227" y="587" width="132" height="48"/>
+                                <rect key="frame" x="41" y="370" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -418,22 +413,6 @@
                                     <segue destination="PwD-z1-Cfd" kind="show" id="3dy-Nm-FNa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="Ekb-5g-7Gs">
-                                <rect key="frame" x="205" y="287" width="192" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="etq-3M-53S" appends="YES" id="eB8-kb-bTd"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="MMT-d3-EIu">
-                                <rect key="frame" x="-44" y="273" width="201" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="QCP-wH-S8a" appends="YES" id="YTJ-7h-gzq"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -448,24 +427,12 @@
                         <outlet property="checkoutBtn" destination="FPZ-9G-XJ2" id="Ye7-oc-8vc"/>
                         <outlet property="choice1" destination="UsH-aQ-8BW" id="yZA-Ig-4Vg"/>
                         <outlet property="choice2" destination="HSS-nn-gM1" id="Bu9-Un-k0f"/>
-                        <outlet property="lady1" destination="MMT-d3-EIu" id="MYW-kJ-elh"/>
-                        <outlet property="lady2" destination="Ekb-5g-7Gs" id="hFM-QQ-m0f"/>
                         <outlet property="tf" destination="2eB-FB-Fta" id="rw3-Co-Pys"/>
                         <outlet property="tryElseBtn" destination="GQO-fT-Uaf" id="e5a-IB-8Rc"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Ki6-w7-och"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bs-XZ-hDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="QCP-wH-S8a">
-                    <connections>
-                        <action selector="lady1Pinched:" destination="kbc-2L-bGI" id="3p3-FO-vJn"/>
-                    </connections>
-                </pinchGestureRecognizer>
-                <pinchGestureRecognizer id="etq-3M-53S">
-                    <connections>
-                        <action selector="lady2Pinched:" destination="kbc-2L-bGI" id="08M-dY-8Xj"/>
-                    </connections>
-                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3212" y="86.806596701649184"/>
         </scene>
@@ -826,19 +793,9 @@
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="556" height="796"/>
         <image name="street_night" width="556" height="796"/>
-<<<<<<< HEAD
-        <image name="women_austere" width="387.33334350585938" height="595.33331298828125"/>
-        <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ki6-w7-och"/>
-        <segue reference="3dy-Nm-FNa"/>
-=======
-        <image name="waiter" width="304" height="474.33334350585938"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
-        <segue reference="kJU-rm-7jU"/>
->>>>>>> 38823d647edbf88e2d12ae166d82002eda2786be
+        <segue reference="EXQ-3t-d1s"/>
+        <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>
 </document>
