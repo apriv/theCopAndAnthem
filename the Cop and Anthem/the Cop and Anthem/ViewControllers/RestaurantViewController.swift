@@ -16,6 +16,14 @@ class RestaurantViewController: UIViewController {
     @IBOutlet weak var tf: UITextView!
     
     var stage = 0
+    var count = 0
+    let text = ["Maybe the most pleasant way is to go and have a good dinner at some fine restaurant",
+                "Then you can say no money to pay",
+                "Then the police will be called",
+                "Thinking this way, you stopped at a large and brightly lighted restaurant.",
+                "You are sure you looked alright, but not sure about pants",
+                "You choose to:"]
+    lazy var size = text.count
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +45,8 @@ class RestaurantViewController: UIViewController {
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = true
-            self.stepInsideBtn.isHidden = false
-            tf.text = "Let's do it"
+            self.stepInsideBtn.isHidden = true
+            tf.text = text[count]
         case 1:
             // waiter talk
             self.choice1.isHidden = false
@@ -50,18 +58,21 @@ class RestaurantViewController: UIViewController {
             tf.text = "Waiter: You can't afford here. Get out. "
         case 2:
             //choice 1
-            tf.text = "bad choice 1"
+            tf.text = "Use coat to cover your leg"
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.stepInsideBtn.isHidden = true
         case 3:
             // choice 2
-            tf.text = "bad choice 2"
+            tf.text = "Directly go into restaurant"
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.stepInsideBtn.isHidden = true
+        case 4:
+            tf.text = text[count]
+            self.stepInsideBtn.isHidden = false
         default:
             // do nothing
             break
@@ -79,6 +90,19 @@ class RestaurantViewController: UIViewController {
         stage = 1
         gotoStage()
     }
+    
+    @IBAction func textTap(_ sender: Any) {
+        if (count<size-1){
+            count = count+1
+        }
+        else{
+            print("enter")
+            stage = 4;
+        }
+        gotoStage()
+    }
+    
+    
     
     // what happen when choice1 pressed
     @IBAction func choice1Pressed(_ sender: UIButton) {

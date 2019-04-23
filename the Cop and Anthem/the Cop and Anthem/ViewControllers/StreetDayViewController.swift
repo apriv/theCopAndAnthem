@@ -52,6 +52,7 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
             choice1.setTitle("try something", for: .normal)
             //self.choice2.isHidden = false
             tf.text = text[count]
+            
         default:
             // do nothing
             break
