@@ -54,6 +54,7 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
             //self.choice2.isHidden = false
             print("stage is 1")
             tf.text = text[count]
+            
         default:
             // do nothing
             break
