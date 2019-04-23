@@ -17,13 +17,18 @@ class RestaurantViewController: UIViewController {
     
     var stage = 0
     var count = 0
+    var count2 = 0
     let text = ["Maybe the most pleasant way is to go and have a good dinner at some fine restaurant",
                 "Then you can say no money to pay",
                 "Then the police will be called",
-                "Thinking this way, you stopped at a large and brightly lighted restaurant.",
-                "You are sure you looked alright, but not sure about pants",
-                "You choose to:"]
+                "Thinking this way, you stopped at a large and brightly lighted restaurant."]
+    let text2 = ["No one stopped you.",
+                 "You have a big dinner.",
+                 "You: Money and I are strangers. Just call the police!",
+                 "Waiter: No police for you!",
+                 "You got threw on the street by two waiters."]
     lazy var size = text.count
+    lazy var size2 = text2.count
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,26 +58,29 @@ class RestaurantViewController: UIViewController {
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
-            choice1.setTitle("say #1", for: .normal)
-            choice2.setTitle("say #2", for: .normal)
-            tf.text = "Waiter: You can't afford here. Get out. "
+            choice1.setTitle("Directly go into restaurant", for: .normal)
+            choice2.setTitle("Use coat to cover your leg", for: .normal)
+            tf.text = "You are sure you looked alright, but not sure about pants. \nYou choose to:"
         case 2:
             //choice 1
-            tf.text = "Use coat to cover your leg"
+            tf.text = "Waiter: You cannot afford this restaurant. Get out!"
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
             self.stepInsideBtn.isHidden = true
         case 3:
             // choice 2
-            tf.text = "Directly go into restaurant"
+            tf.text = text2[count2]
             self.choice1.isHidden = true
             self.choice2.isHidden = true
-            self.tryElseBtn.isHidden = false
+            self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
         case 4:
             tf.text = text[count]
             self.stepInsideBtn.isHidden = false
+        case 5:
+            tf.text = text2[count2]
+            self.tryElseBtn.isHidden = false
         default:
             // do nothing
             break
@@ -92,13 +100,26 @@ class RestaurantViewController: UIViewController {
     }
     
     @IBAction func textTap(_ sender: Any) {
-        if (count<size-1){
-            count = count+1
+        if(stage==3){
+            if (count2<size2-1){
+                stage = 3
+                print(count2)
+                count2 = count2+1
+            }
+            else{
+                print("enter")
+                stage = 5;
+            }
         }
         else{
-            print("enter")
-            stage = 4;
+            if (count<size-1){
+                count = count+1
+            }
+            else{
+                stage = 4;
+            }
         }
+        
         gotoStage()
     }
     
