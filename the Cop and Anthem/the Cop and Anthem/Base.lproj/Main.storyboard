@@ -366,22 +366,52 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsH-aQ-8BW">
-                                <rect key="frame" x="41" y="303" width="292" height="32"/>
+                                <rect key="frame" x="41" y="301" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 1">
+                                <state key="normal" title="Lady 1">
                                     <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="lady1chosen:" destination="kbc-2L-bGI" eventType="touchUpInside" id="e3M-9c-uk1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-nn-gM1">
-                                <rect key="frame" x="41" y="372" width="292" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-9G-XJ2">
+                                <rect key="frame" x="41" y="273" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 2">
+                                <state key="normal" title="Check it out">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkPressed:" destination="kbc-2L-bGI" eventType="touchUpInside" id="a4j-jh-zYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-nn-gM1">
+                                <rect key="frame" x="41" y="370" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Lady 2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="lady2chosen:" destination="kbc-2L-bGI" eventType="touchUpInside" id="qSd-xf-rKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQO-fT-Uaf">
+                                <rect key="frame" x="41" y="403" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="No luck here">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PwD-z1-Cfd" kind="show" id="3dy-Nm-FNa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -394,6 +424,11 @@
                         <viewLayoutGuide key="safeArea" id="Us6-Bm-VyR"/>
                     </view>
                     <connections>
+                        <outlet property="checkoutBtn" destination="FPZ-9G-XJ2" id="Ye7-oc-8vc"/>
+                        <outlet property="choice1" destination="UsH-aQ-8BW" id="yZA-Ig-4Vg"/>
+                        <outlet property="choice2" destination="HSS-nn-gM1" id="Bu9-Un-k0f"/>
+                        <outlet property="tf" destination="2eB-FB-Fta" id="rw3-Co-Pys"/>
+                        <outlet property="tryElseBtn" destination="GQO-fT-Uaf" id="e5a-IB-8Rc"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Ki6-w7-och"/>
                     </connections>
                 </viewController>
@@ -734,7 +769,8 @@
         <image name="street_night" width="556" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
-        <segue reference="kJU-rm-7jU"/>
+        <segue reference="BSS-2Z-s3H"/>
+        <segue reference="vNV-GN-mca"/>
+        <segue reference="3dy-Nm-FNa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,13 @@
 import UIKit
 
 class ShowcaseViewController: UIViewController {
+    var stage = 0
+    @IBOutlet weak var checkoutBtn: UIButton!
+    @IBOutlet weak var tryElseBtn: UIButton!
+    @IBOutlet weak var choice1: UIButton!
+    @IBOutlet weak var choice2: UIButton!
+    @IBOutlet weak var tf: UITextView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +26,63 @@ class ShowcaseViewController: UIViewController {
         upSwipe.direction = .up
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
-        
+        gotoStage()
     }
+    
+    // do stuff accoring int stage
+    func gotoStage(){
+        switch stage{
+        case 0:
+            // bg story
+            self.choice1.isHidden = true
+            self.choice2.isHidden = true
+            self.tryElseBtn.isHidden = true
+            self.checkoutBtn.isHidden = false
+            tf.text = "Check it out"
+        case 1:
+            // waiter talk
+            self.choice1.isHidden = false
+            self.choice2.isHidden = false
+            self.tryElseBtn.isHidden = true
+            self.checkoutBtn.isHidden = true
+            choice1.setTitle("Lady #1", for: .normal)
+            choice2.setTitle("Lady #2", for: .normal)
+            tf.text = "Which one are you goin for"
+        case 2:
+            //lady 1
+            tf.text = "Lady 1: Com'on Baby."
+            self.choice1.isHidden = true
+            self.choice2.isHidden = true
+            self.tryElseBtn.isHidden = false
+            self.checkoutBtn.isHidden = true
+        case 3:
+            // lady 2
+            tf.text = "Lady 2: Com'on Baby."
+            self.choice1.isHidden = true
+            self.choice2.isHidden = true
+            self.tryElseBtn.isHidden = false
+            self.checkoutBtn.isHidden = true
+        default:
+            // do nothing
+            break
+        }
+    }
+    
+    @IBAction func checkPressed(_ sender: UIButton) {
+        stage = 1
+        gotoStage()
+    }
+    
+    @IBAction func lady1chosen(_ sender: UIButton) {
+        stage = 2
+        gotoStage()
+    }
+    
+    @IBAction func lady2chosen(_ sender: UIButton) {
+        stage = 3
+        gotoStage()
+    }
+    
     
     // function used for swipe back to menu
     @objc func handleSwipe(sender:UISwipeGestureRecognizer){
