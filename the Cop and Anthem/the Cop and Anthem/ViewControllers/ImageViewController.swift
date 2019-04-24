@@ -46,6 +46,11 @@ class ImageViewController: UIViewController {
         self.img8.isHidden = img_bools[8]
         img0.isUserInteractionEnabled = true
         img1.isUserInteractionEnabled = true
+        img2.isUserInteractionEnabled = true
+        img3.isUserInteractionEnabled = true
+        img4.isUserInteractionEnabled = true
+        img5.isUserInteractionEnabled = true
+        img6.isUserInteractionEnabled = true
         img7.isUserInteractionEnabled = true
     }
     
@@ -62,6 +67,25 @@ class ImageViewController: UIViewController {
     @IBAction func toCathedral(_ sender: Any) {
         performSegue(withIdentifier: "to7", sender: self)
     }
+    
+    @IBAction func toLady(_ sender: Any) {
+        performSegue(withIdentifier: "to2", sender: self)
+    }
+    @IBAction func toLady2(_ sender: Any) {
+        performSegue(withIdentifier: "to2", sender: self)
+    }
+    
+    @IBAction func toStreetNight(_ sender: Any) {
+        performSegue(withIdentifier: "to4", sender: self)
+    }
+    
+    @IBAction func toRestaurantNight(_ sender: Any) {
+        performSegue(withIdentifier: "to5", sender: self)
+    }
+    @IBAction func toShowcase(_ sender: Any) {
+        performSegue(withIdentifier: "to6", sender: self)
+    }
+    
     
     
 

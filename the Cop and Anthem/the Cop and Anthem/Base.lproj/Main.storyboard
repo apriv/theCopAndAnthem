@@ -73,14 +73,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
                                 <rect key="frame" x="264" y="171" width="90" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ucj-dZ-foS" appends="YES" id="1vq-95-jBo"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-nb-oFo">
                                 <rect key="frame" x="25" y="334" width="90" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Y2d-dw-Se8" appends="YES" id="JhV-R9-jyo"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="SVY-ak-fLf">
                                 <rect key="frame" x="25" y="476" width="90" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CzF-Ap-FZ8" appends="YES" id="uWA-No-eLT"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Tb-svi">
                                 <rect key="frame" x="148" y="171" width="90" height="129"/>
@@ -93,10 +105,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant_dark" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-hX-xK8">
                                 <rect key="frame" x="264" y="334" width="90" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rFy-WB-waq" appends="YES" id="WMh-Dh-As7"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="al2-2e-ftg">
                                 <rect key="frame" x="147" y="334" width="90" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aQk-c4-qAY" appends="YES" id="M8U-9p-9ht"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-LQ-7Ud">
                                 <rect key="frame" x="153" y="476" width="90" height="123"/>
@@ -143,6 +163,10 @@
                         <segue destination="fM8-kc-E5s" kind="presentation" identifier="to0" id="crb-2R-xTs"/>
                         <segue destination="mqm-yW-tF0" kind="presentation" identifier="to1" id="WWK-8l-gIX"/>
                         <segue destination="KJk-tn-EjK" kind="presentation" identifier="to7" id="Q4G-Oc-oQa"/>
+                        <segue destination="kbc-2L-bGI" kind="presentation" identifier="to2" id="BLn-3d-IvF"/>
+                        <segue destination="bbm-77-XTI" kind="presentation" identifier="to4" id="z5c-YS-iFf"/>
+                        <segue destination="OED-mk-yGd" kind="presentation" identifier="to5" id="vOk-Ed-z5I"/>
+                        <segue destination="tvj-Mq-EKs" kind="presentation" identifier="to6" id="rPJ-z1-vvO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,6 +183,31 @@
                 <tapGestureRecognizer id="nQG-xE-sYf">
                     <connections>
                         <action selector="toCathedral:" destination="liW-k7-DWT" id="KHU-yq-N7F"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ucj-dZ-foS">
+                    <connections>
+                        <action selector="toLady:" destination="liW-k7-DWT" id="ot7-I0-MOz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Y2d-dw-Se8">
+                    <connections>
+                        <action selector="toLady2:" destination="liW-k7-DWT" id="i2I-aN-8fZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aQk-c4-qAY">
+                    <connections>
+                        <action selector="toStreetNight:" destination="liW-k7-DWT" id="oF5-un-SPg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rFy-WB-waq">
+                    <connections>
+                        <action selector="toRestaurantNight:" destination="liW-k7-DWT" id="wyK-dw-y6D"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CzF-Ap-FZ8">
+                    <connections>
+                        <action selector="toShowcase:" destination="liW-k7-DWT" id="ua7-Ue-656"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1163,9 +1212,13 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="V59-Gh-2MS"/>
-        <segue reference="oiu-D3-hZs"/>
-        <segue reference="Dvn-iF-X8a"/>
+        <segue reference="Q4G-Oc-oQa"/>
+        <segue reference="rPJ-z1-vvO"/>
+        <segue reference="vOk-Ed-z5I"/>
+        <segue reference="z5c-YS-iFf"/>
+        <segue reference="BLn-3d-IvF"/>
+        <segue reference="WWK-8l-gIX"/>
         <segue reference="Soe-H7-f4b"/>
-        <segue reference="isz-S7-ju2"/>
+        <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
 </document>
