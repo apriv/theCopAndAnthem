@@ -46,7 +46,7 @@
         <!--Archive-->
         <scene sceneID="Akc-Km-Okg">
             <objects>
-                <collectionViewController title="Archive" id="TZg-O6-xFa" customClass="ArchiveCollectionViewController" customModule="the_Cop_and_Anthem" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Archive" id="TZg-O6-xFa" customClass="ImageCollectionViewController" customModule="the_Cop_and_Anthem" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="G9S-b0-M59">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IRp-3d-oee">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Street" id="IRp-3d-oee">
                                 <rect key="frame" x="0.0" y="0.0" width="119" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -896,7 +896,6 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pYO-gH-tok"/>
         <segue reference="Jg7-95-E8L"/>
         <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>

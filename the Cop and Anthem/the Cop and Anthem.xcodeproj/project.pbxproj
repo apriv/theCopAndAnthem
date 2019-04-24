@@ -24,6 +24,7 @@
 		117D17A5226E434B00ED9835 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17A4226E434B00ED9835 /* SelectionViewController.swift */; };
 		117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */; };
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
+		B10007B822700E80008D7B42 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		117D17A4226E434B00ED9835 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceUiTableView.swift; sourceTree = "<group>"; };
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
+		B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				117D17A2226E21C800ED9835 /* ArchiveCollectionViewController.swift */,
 				117D17A0226E213E00ED9835 /* AboutUsViewController.swift */,
 				117D17A4226E434B00ED9835 /* SelectionViewController.swift */,
+				B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10007B822700E80008D7B42 /* ImageCollectionViewController.swift in Sources */,
 				117D1793226E18B000ED9835 /* ShowcaseViewController.swift in Sources */,
 				117D179D226E195500ED9835 /* PrisonViewController.swift in Sources */,
 				117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */,
