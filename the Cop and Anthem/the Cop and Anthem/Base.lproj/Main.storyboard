@@ -49,65 +49,66 @@
             </objects>
             <point key="canvasLocation" x="1669.5999999999999" y="-664.31784107946032"/>
         </scene>
-        <!--Archive-->
-        <scene sceneID="Akc-Km-Okg">
+        <!--Image View Controller-->
+        <scene sceneID="IOF-Qe-16H">
             <objects>
-                <collectionViewController title="Archive" id="TZg-O6-xFa" customClass="ImageCollectionViewController" customModule="the_Cop_and_Anthem" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="G9S-b0-M59">
+                <viewController id="liW-k7-DWT" userLabel="Image View Controller" customClass="ImageViewController" customModule="the_Cop_and_Anthem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlU-mD-W99">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
+                                <rect key="frame" x="25" y="171" width="90" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
+                                <rect key="frame" x="264" y="171" width="90" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-nb-oFo">
+                                <rect key="frame" x="25" y="334" width="90" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="SVY-ak-fLf">
+                                <rect key="frame" x="25" y="476" width="90" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Tb-svi">
+                                <rect key="frame" x="148" y="171" width="90" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant_dark" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-hX-xK8">
+                                <rect key="frame" x="264" y="334" width="90" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="al2-2e-ftg">
+                                <rect key="frame" x="147" y="334" width="90" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-LQ-7Ud">
+                                <rect key="frame" x="153" y="476" width="90" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="EON-hh-DXm">
+                                <rect key="frame" x="269" y="476" width="90" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-Ko-FTz">
+                                <rect key="frame" x="30" y="66" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewLayout key="collectionViewLayout" id="LIB-hj-zYD"/>
-                        <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Igp-fP-bDp">
-                            <rect key="frame" x="0.0" y="-20" width="375" height="667"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Street" id="IRp-3d-oee">
-                                <rect key="frame" x="0.0" y="0.0" width="119" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="119" height="137"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="6tY-hE-W5d">
-                                            <rect key="frame" x="0.0" y="0.0" width="119" height="137"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.3392233456" green="0.29411764709999999" blue="0.56470588239999997" alpha="0.59276005990000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <size key="customSize" width="119" height="137"/>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ahj-nl-Nau">
-                                <rect key="frame" x="129" y="0.0" width="124" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="124" height="137"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="jPW-D0-iaZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="124" height="137"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <size key="customSize" width="124" height="137"/>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="TZg-O6-xFa" id="GoD-oG-Pqs"/>
-                            <outlet property="delegate" destination="TZg-O6-xFa" id="mP2-Ak-uLh"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Archive" id="ZZA-hA-knW"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fLc-o1-eyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="F06-UB-Htc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Archive" id="XRa-sI-Jgz" userLabel="Archive"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="-664"/>
+            <point key="canvasLocation" x="997.60000000000002" y="-1119.4902548725638"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -1061,8 +1062,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rhB-6H-KgF"/>
-                        <segue destination="TZg-O6-xFa" kind="relationship" relationship="viewControllers" id="ih5-AA-r0Z"/>
                         <segue destination="o7C-dg-j0N" kind="relationship" relationship="viewControllers" id="8Ae-Ye-0qd"/>
+                        <segue destination="liW-k7-DWT" kind="relationship" relationship="viewControllers" id="P74-aY-D52"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06k-D4-bLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1075,6 +1076,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="prinson_broken" width="1668" height="2388"/>
         <image name="prison" width="1668" height="2388"/>
         <image name="restaurant" width="1668" height="2388"/>
+        <image name="restaurant_dark" width="1668" height="2388"/>
         <image name="restaurant_umbrella" width="1668" height="2388"/>
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="556" height="796"/>
