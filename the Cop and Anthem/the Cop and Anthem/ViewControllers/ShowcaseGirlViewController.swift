@@ -10,6 +10,12 @@ import UIKit
 
 class ShowcaseGirlViewController: UIViewController {
     var stage = 0
+    var count = 0
+    let text = ["Cop: Where's the man that did that?",
+                "You: Don’t you think that I might have done it?",
+                "Cop: Ah! Men who break windows do not stop there to talk to cops.",
+                "The cop saw a man further along the street, running. He ran after him."]
+    lazy var size = text.count
     @IBOutlet weak var doBtn: UIButton!
     @IBOutlet weak var doElseBtn: UIButton!
     @IBOutlet weak var tf: UITextView!
@@ -18,7 +24,7 @@ class ShowcaseGirlViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Set gesture to menu
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -37,14 +43,20 @@ class ShowcaseGirlViewController: UIViewController {
             doElseBtn.isHidden = true
             glass.isHidden = true
         case 1:
-            tf.text = "No Text"
+            
             tf.isHidden = true
             doBtn.isHidden = true
             doElseBtn.isHidden = true
             glass.isHidden = false
         case 2:
+            tf.text = text[count]
             tf.isHidden = false
-            doElseBtn.isHidden = false
+            if(count == size-1){
+                doElseBtn.isHidden = false
+            }
+            else{
+                doElseBtn.isHidden = true
+            }
             doBtn.isHidden = true
             glass.isHidden = true
         default:
@@ -60,6 +72,15 @@ class ShowcaseGirlViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func tapText(_ sender: Any) {
+        stage = 2
+        if (count<size-1){
+            count = count+1
+        }
+        gotoStage()
+    }
+    
     @IBAction func doPressed(_ sender: UIButton) {
         stage = 1
         gotoStage()
@@ -72,15 +93,15 @@ class ShowcaseGirlViewController: UIViewController {
     }
     
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
