@@ -80,6 +80,7 @@ class RestaurantViewController: UIViewController {
             self.stepInsideBtn.isHidden = false
         case 5:
             tf.text = text2[count2]
+            self.stepInsideBtn.isHidden = true
             self.tryElseBtn.isHidden = false
         default:
             // do nothing
