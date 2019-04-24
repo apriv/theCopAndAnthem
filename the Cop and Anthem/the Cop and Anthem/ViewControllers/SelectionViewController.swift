@@ -13,12 +13,11 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     @IBOutlet weak var Cells: ChoiceUiTableView!
     
-    let places: [String] = ["Dine and dash",
+    var places: [String] = ["Dine and dash",
                             "Break a showcase",
                             "//Break the peace",
                             "//Rob someone",
-                            "Harass a lady",
-                            "Walk around"]
+                            "Harass a lady"]
     let cellReuseIdentifier = "cell"
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,6 +104,14 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         upSwipe.direction = .up
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
+        
+        // conditions to add a line
+        let defaults = UserDefaults.standard
+        var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [true,true,true,true,true,true,true,true,false]
+        if (!img_bools[1] && !img_bools[2] && !img_bools[6]){
+            places.append("Walk Around")
+        }
+
         
     }
     
