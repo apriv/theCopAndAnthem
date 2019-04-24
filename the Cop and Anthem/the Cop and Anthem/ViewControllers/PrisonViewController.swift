@@ -9,7 +9,10 @@
 import UIKit
 
 class PrisonViewController: UIViewController {
-
+    var stage = 0
+    @IBOutlet weak var tf: UITextView!
+    @IBOutlet weak var enjoy: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,9 +23,31 @@ class PrisonViewController: UIViewController {
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
         
+        gotoStage()
     }
-    // Your dream finally come true. But you just changed your mind 30 sec ago.
+    //
     
+    // do stuff accoring int stage
+    func gotoStage(){
+        switch stage{
+        case 0:
+            // hide choices
+            self.enjoy.isHidden = false
+            tf.text = "Your dream finally come true. But you just changed your mind 30 sec ago."
+        case 1:
+            // show choices
+            
+            tf.text = "2nd text"
+            
+        default:
+            // do nothing
+            break
+        }
+    }
+    
+    @IBAction func enjoyPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMenu", sender: self)
+    }
     
     
     // function used for swipe back to menu

@@ -186,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prinson_broken" translatesAutoresizingMaskIntoConstraints="NO" id="IxT-v1-IIt">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" text="What do you want to try next to get yourself in prison?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-0P-oB9">
                                 <rect key="frame" x="46" y="117" width="283" height="64"/>
@@ -256,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-i0-3B9">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buf-jW-NDh">
                                 <rect key="frame" x="52" y="393" width="292" height="36"/>
@@ -535,7 +535,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="Ra0-LA-reG">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-y1-0D1">
                                 <rect key="frame" x="41" y="110" width="292" height="128"/>
@@ -680,7 +680,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="s0W-t1-xFx">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cja-ki-7qG">
                                 <rect key="frame" x="41" y="113" width="292" height="128"/>
@@ -690,23 +690,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub2-Yj-3mD">
-                                <rect key="frame" x="41" y="300" width="292" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 1">
-                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-lO-9iu">
-                                <rect key="frame" x="41" y="369" width="292" height="32"/>
+                                <rect key="frame" x="41" y="367" width="292" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 2">
+                                <state key="normal" title="Enjoy the winter">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="enjoyPressed:" destination="d1G-6D-BUc" eventType="touchUpInside" id="dUM-ga-2ev"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -719,6 +713,8 @@
                         <viewLayoutGuide key="safeArea" id="SMJ-c2-UHt"/>
                     </view>
                     <connections>
+                        <outlet property="enjoy" destination="ZAs-lO-9iu" id="2Dz-vy-vHx"/>
+                        <outlet property="tf" destination="cja-ki-7qG" id="MRS-ky-6b0"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Jg7-95-E8L"/>
                     </connections>
                 </viewController>
@@ -851,7 +847,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EXQ-3t-d1s"/>
+        <segue reference="Jg7-95-E8L"/>
         <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>
 </document>
