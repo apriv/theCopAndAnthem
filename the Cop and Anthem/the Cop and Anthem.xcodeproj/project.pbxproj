@@ -24,7 +24,7 @@
 		117D17A5226E434B00ED9835 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17A4226E434B00ED9835 /* SelectionViewController.swift */; };
 		117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */; };
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
-		B10007B822700E80008D7B42 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */; };
+		B10007BC227017E1008D7B42 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007BB227017E1008D7B42 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		117D17A4226E434B00ED9835 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceUiTableView.swift; sourceTree = "<group>"; };
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
-		B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		B10007BB227017E1008D7B42 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 				117D17A2226E21C800ED9835 /* ArchiveCollectionViewController.swift */,
 				117D17A0226E213E00ED9835 /* AboutUsViewController.swift */,
 				117D17A4226E434B00ED9835 /* SelectionViewController.swift */,
-				B10007B722700E7F008D7B42 /* ImageCollectionViewController.swift */,
+				B10007BB227017E1008D7B42 /* ImageViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
@@ -186,7 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10007B822700E80008D7B42 /* ImageCollectionViewController.swift in Sources */,
 				117D1793226E18B000ED9835 /* ShowcaseViewController.swift in Sources */,
 				117D179D226E195500ED9835 /* PrisonViewController.swift in Sources */,
 				117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */,
@@ -194,6 +193,7 @@
 				117D17A5226E434B00ED9835 /* SelectionViewController.swift in Sources */,
 				117D17A1226E213E00ED9835 /* AboutUsViewController.swift in Sources */,
 				117D17A3226E21C800ED9835 /* ArchiveCollectionViewController.swift in Sources */,
+				B10007BC227017E1008D7B42 /* ImageViewController.swift in Sources */,
 				117D1799226E192000ED9835 /* ShowcaseGirlViewController.swift in Sources */,
 				117D1791226E170500ED9835 /* RestaurantViewController.swift in Sources */,
 				1106E5A4226BC9A800598DD0 /* AppDelegate.swift in Sources */,
@@ -347,13 +347,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3CMZBFC49W;
+				DEVELOPMENT_TEAM = 69K5C64P5W;
 				INFOPLIST_FILE = "the Cop and Anthem/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AprilZhou.the-Cop-and-Anthem";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AprilZhou.the-Cop-and-Anthem2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,13 +365,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3CMZBFC49W;
+				DEVELOPMENT_TEAM = 69K5C64P5W;
 				INFOPLIST_FILE = "the Cop and Anthem/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AprilZhou.the-Cop-and-Anthem";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AprilZhou.the-Cop-and-Anthem2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
