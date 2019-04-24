@@ -30,6 +30,7 @@ class ImageViewController: UIViewController {
         let defaults = UserDefaults.standard
         var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [true,true,true,true,true,true,true,true,true]
         defaults.set(img_bools, forKey: "stored_bool_list")
+        img_bools[0] = false
         
         print(img_bools)
         
@@ -44,6 +45,8 @@ class ImageViewController: UIViewController {
         self.img7.isHidden = img_bools[7]
         self.img8.isHidden = img_bools[8]
     }
+    
+    
     
 
     /*

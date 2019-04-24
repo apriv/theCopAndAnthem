@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-lb-zTB">
-                                <rect key="frame" x="-3" y="0.0" width="378" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-lb-zTB">
+                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the Cop and Anthem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-dq-VA8">
                                 <rect key="frame" x="72" y="164" width="231" height="32"/>
@@ -49,6 +48,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0KL-lb-zTB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NVc-1I-823"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0KL-lb-zTB" secondAttribute="trailing" id="dPq-Eb-HCJ"/>
+                            <constraint firstItem="0KL-lb-zTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i9y-t4-5gk"/>
+                            <constraint firstAttribute="bottom" secondItem="0KL-lb-zTB" secondAttribute="bottom" id="jkI-tC-QlL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Story" id="qZs-y6-Ap9"/>
@@ -68,6 +73,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
                                 <rect key="frame" x="25" y="171" width="90" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
                                 <rect key="frame" x="264" y="171" width="90" height="129"/>
@@ -122,11 +128,13 @@
                         <outlet property="img5" destination="dTn-hX-xK8" id="bH4-SH-mIY"/>
                         <outlet property="img6" destination="SVY-ak-fLf" id="9au-jF-du8"/>
                         <outlet property="img7" destination="mYt-LQ-7Ud" id="z2U-aJ-Ex9"/>
+                        <outlet property="img8" destination="EON-hh-DXm" id="40m-Tw-Kzs"/>
+                        <segue destination="fM8-kc-E5s" kind="show" identifier="to0" id="eco-gy-3ro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.60000000000002" y="-1119.4902548725638"/>
+            <point key="canvasLocation" x="5569" y="-1372"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -1106,5 +1114,6 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <segue reference="Dvn-iF-X8a"/>
         <segue reference="vNV-GN-mca"/>
         <segue reference="kJU-rm-7jU"/>
+        <segue reference="eco-gy-3ro"/>
     </inferredMetricsTieBreakers>
 </document>
