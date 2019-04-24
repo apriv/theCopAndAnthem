@@ -122,7 +122,6 @@
                         <outlet property="img5" destination="dTn-hX-xK8" id="bH4-SH-mIY"/>
                         <outlet property="img6" destination="SVY-ak-fLf" id="9au-jF-du8"/>
                         <outlet property="img7" destination="mYt-LQ-7Ud" id="z2U-aJ-Ex9"/>
-                        <outlet property="img8" destination="EON-hh-DXm" id="cFf-Zs-7Oc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1104,7 +1103,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
+        <segue reference="Dvn-iF-X8a"/>
+        <segue reference="vNV-GN-mca"/>
         <segue reference="kJU-rm-7jU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         // load all true data
         let defaults = UserDefaults.standard
-        var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [true,true,true,true,true,true,true,true,true]
+        var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [false,true,true,true,true,true,true,true,true]
         defaults.set(img_bools, forKey: "stored_bool_list")
     }
 

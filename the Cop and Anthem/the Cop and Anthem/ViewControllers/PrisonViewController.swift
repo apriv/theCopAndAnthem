@@ -23,6 +23,12 @@ class PrisonViewController: UIViewController {
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
         
+        // store data
+        let defaults = UserDefaults.standard
+        var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [false,true,true,true,true,true,true,true,true]
+        img_bools[8] = true
+        defaults.set(img_bools, forKey: "stored_bool_list")
+        
         gotoStage()
     }
     //

@@ -15,8 +15,8 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     let places: [String] = ["Dine and dash",
                             "Break a showcase",
-                            "Break the peace",
-                            "Rob someone",
+                            "//Break the peace",
+                            "//Rob someone",
                             "Harass a lady",
                             "Walk around"]
     let cellReuseIdentifier = "cell"
