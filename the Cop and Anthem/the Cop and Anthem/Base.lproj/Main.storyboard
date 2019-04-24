@@ -997,29 +997,18 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-5Z-FRK">
-                                <rect key="frame" x="138" y="298" width="99" height="36"/>
+                                <rect key="frame" x="42" y="298" width="291" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="aAv-Tt-VjJ"/>
+                                    <constraint firstAttribute="width" constant="291" id="vI7-Fs-e6r"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Confessing">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="c2Pressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="NI7-aE-v3d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-3W-Uow">
-                                <rect key="frame" x="41.5" y="298" width="292" height="36"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="0Xz-LE-4wh"/>
-                                    <constraint firstAttribute="width" constant="292" id="Hhv-ba-CyI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Go inside">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="goInsidePressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="d0Y-U7-J6m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5K-89-Cpx">
@@ -1035,6 +1024,21 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 </state>
                                 <connections>
                                     <segue destination="d1G-6D-BUc" kind="show" id="XLF-VK-sPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-3W-Uow">
+                                <rect key="frame" x="42" y="298" width="292" height="36"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0Xz-LE-4wh"/>
+                                    <constraint firstAttribute="width" constant="292" id="Hhv-ba-CyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go inside">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goInsidePressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="d0Y-U7-J6m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1073,7 +1077,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6065" y="87"/>
+            <point key="canvasLocation" x="6064.8000000000002" y="86.806596701649184"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1LW-cn-RZ8">
@@ -1112,7 +1116,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="vNV-GN-mca"/>
+        <segue reference="IoL-W4-Ye0"/>
         <segue reference="kJU-rm-7jU"/>
         <segue reference="eco-gy-3ro"/>
     </inferredMetricsTieBreakers>
