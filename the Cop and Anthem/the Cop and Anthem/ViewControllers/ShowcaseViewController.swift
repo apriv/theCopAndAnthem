@@ -10,6 +10,7 @@ import UIKit
 
 class ShowcaseViewController: UIViewController {
     var stage = 0
+    let duration: Double = 0.05
     @IBOutlet weak var checkoutBtn: UIButton!
     @IBOutlet weak var tryElseBtn: UIButton!
     @IBOutlet weak var choice1: UIButton!
@@ -84,12 +85,21 @@ class ShowcaseViewController: UIViewController {
     
     @IBAction func lady1chosen(_ sender: UIButton) {
         stage = 2
+        UIView.animate(withDuration: duration, animations: {self.moveRight(view: self.lady1)})
+        UIView.animate(withDuration: duration, delay: 0.05, animations: {self.moveLeft(view: self.lady1)})
+        UIView.animate(withDuration: duration, delay: 0.1, animations: {self.moveLeft(view: self.lady1)})
+        UIView.animate(withDuration: duration, delay: 0.15, animations: {self.moveRight(view: self.lady1)})
         gotoStage()
     }
     
     @IBAction func lady2chosen(_ sender: UIButton) {
         stage = 3
+        UIView.animate(withDuration: duration, animations: {self.moveRight(view: self.lady2)})
+        UIView.animate(withDuration: duration, delay: 0.05, animations: {self.moveLeft(view: self.lady2)})
+        UIView.animate(withDuration: duration, delay: 0.1, animations: {self.moveLeft(view: self.lady2)})
+        UIView.animate(withDuration: duration, delay: 0.15, animations: {self.moveRight(view: self.lady2)})
         gotoStage()
+        
     }
     
     
@@ -98,6 +108,13 @@ class ShowcaseViewController: UIViewController {
         if (sender.state == .ended){
             performSegue(withIdentifier: "toMenu", sender: self)
         }
+    }
+    
+    func moveRight(view:UIView){
+        view.center.x += 30
+    }
+    func moveLeft(view:UIView){
+        view.center.x -= 30
     }
 
 
