@@ -842,10 +842,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-lO-9iu">
-                                <rect key="frame" x="41" y="367" width="292" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-lO-9iu">
+                                <rect key="frame" x="41.5" y="298" width="292" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="I3f-Ts-GeV"/>
+                                    <constraint firstAttribute="width" constant="292" id="Pxs-yB-x4c"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Enjoy the winter">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -858,6 +861,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="bottom" secondItem="SMJ-c2-UHt" secondAttribute="bottom" id="0E9-dD-WQ5"/>
+                            <constraint firstItem="ZAs-lO-9iu" firstAttribute="top" secondItem="cja-ki-7qG" secondAttribute="bottom" constant="60" id="Dlc-cP-oJg"/>
+                            <constraint firstItem="ZAs-lO-9iu" firstAttribute="centerX" secondItem="qz2-rd-wuI" secondAttribute="centerX" id="JAx-x8-Onm"/>
                             <constraint firstItem="cja-ki-7qG" firstAttribute="centerX" secondItem="qz2-rd-wuI" secondAttribute="centerX" id="XhU-UT-1cU"/>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="leading" secondItem="SMJ-c2-UHt" secondAttribute="leading" id="h4B-kA-Egj"/>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="top" secondItem="qz2-rd-wuI" secondAttribute="top" id="iTD-Ba-amC"/>
@@ -1031,7 +1036,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V59-Gh-2MS"/>
+        <segue reference="Jg7-95-E8L"/>
         <segue reference="Soe-H7-f4b"/>
     </inferredMetricsTieBreakers>
 </document>
