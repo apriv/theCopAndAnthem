@@ -853,7 +853,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgd-Jn-Ogj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="eMn-kV-12W"/>
+                <tapGestureRecognizer id="eMn-kV-12W">
+                    <connections>
+                        <action selector="tapText:" destination="KJk-tn-EjK" id="dbG-Kk-dZZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6065" y="87"/>
         </scene>
@@ -892,6 +896,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="pYO-gH-tok"/>
         <segue reference="IoL-W4-Ye0"/>
         <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>
