@@ -39,6 +39,14 @@
                                     <segue destination="fM8-kc-E5s" kind="show" identifier="toMenu" id="isz-S7-ju2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljm-2P-4FI">
+                                <rect key="frame" x="174" y="351" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0t-QU-Xby"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -105,6 +113,17 @@
                         <viewLayoutGuide key="safeArea" id="F06-UB-Htc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Archive" id="XRa-sI-Jgz" userLabel="Archive"/>
+                    <connections>
+                        <outlet property="img0" destination="WEL-TT-sy7" id="JrZ-VT-fsP"/>
+                        <outlet property="img1" destination="vRx-Tb-svi" id="aI5-TJ-ZZt"/>
+                        <outlet property="img2" destination="qv5-Cn-jSM" id="eFI-6Q-YeV"/>
+                        <outlet property="img3" destination="0u3-nb-oFo" id="gvf-Zs-Y5a"/>
+                        <outlet property="img4" destination="al2-2e-ftg" id="bLm-L5-GlE"/>
+                        <outlet property="img5" destination="dTn-hX-xK8" id="bH4-SH-mIY"/>
+                        <outlet property="img6" destination="SVY-ak-fLf" id="9au-jF-du8"/>
+                        <outlet property="img7" destination="mYt-LQ-7Ud" id="z2U-aJ-Ex9"/>
+                        <outlet property="img8" destination="EON-hh-DXm" id="cFf-Zs-7Oc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-lB-Qrr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -1079,7 +1098,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="restaurant_dark" width="1668" height="2388"/>
         <image name="restaurant_umbrella" width="1668" height="2388"/>
         <image name="showcase" width="556" height="796"/>
-        <image name="street_day" width="556" height="796"/>
+        <image name="street_day" width="1668" height="2388"/>
         <image name="street_night" width="556" height="796"/>
         <image name="women_austere" width="387.33334350585938" height="595.33331298828125"/>
         <image name="women_passerby" width="387" height="550"/>

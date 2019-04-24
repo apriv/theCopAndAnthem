@@ -104,11 +104,9 @@ class RestaurantViewController: UIViewController {
         if(stage==3){
             if (count2<size2-1){
                 stage = 3
-                print(count2)
                 count2 = count2+1
             }
             else{
-                print("enter")
                 stage = 5;
             }
         }

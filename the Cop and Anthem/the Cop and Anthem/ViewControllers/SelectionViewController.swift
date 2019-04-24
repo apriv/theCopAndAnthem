@@ -38,22 +38,49 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        //create variable
+        let defaults = UserDefaults.standard
+        var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [true,true,true,true,true,true,true,true,false]
+        
         if (indexPath.row == 0){
+            // change and store
+            img_bools[1] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
+            
             performSegue(withIdentifier: "toRestaurant", sender: self)
         }
         else if (indexPath.row == 1){
+            // change and store
+            img_bools[6] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
+            
             performSegue(withIdentifier: "toShowcase2", sender: self)
         }
         else if (indexPath.row == 2){
+            img_bools[4] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
             performSegue(withIdentifier: "toStreetNight", sender: self)
         }
         else if (indexPath.row == 3){
+            img_bools[5] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
             performSegue(withIdentifier: "toCigarShop", sender: self)
         }
         else if (indexPath.row == 4){
+            img_bools[2] = false
+            img_bools[3] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
             performSegue(withIdentifier: "toShowcase", sender: self)
         }
         else if (indexPath.row == 5){
+            img_bools[7] = false
+            defaults.set(img_bools, forKey: "stored_bool_list")
+            print(img_bools)
             performSegue(withIdentifier: "toCathedral", sender: self)
         }
     }
