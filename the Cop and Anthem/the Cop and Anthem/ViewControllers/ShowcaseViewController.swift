@@ -11,6 +11,11 @@ import UIKit
 class ShowcaseViewController: UIViewController {
     var stage = 0
     let duration: Double = 0.05
+    var count = 0
+    let text = ["Your plan is to speak to a young woman.",
+                "She should be a very nice young lady, who would not want a strange man to speak to her.",
+                "She would ask the cop for help."]
+    lazy var size = text.count
     @IBOutlet weak var checkoutBtn: UIButton!
     @IBOutlet weak var tryElseBtn: UIButton!
     @IBOutlet weak var choice1: UIButton!
@@ -39,8 +44,13 @@ class ShowcaseViewController: UIViewController {
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = true
-            self.checkoutBtn.isHidden = false
-            tf.text = "Check it out"
+            if (count == size-1){
+                self.checkoutBtn.isHidden = false
+            }
+            else{
+                self.checkoutBtn.isHidden = true
+            }
+            tf.text = text[count]
             self.lady1.isHidden = true
             self.lady2.isHidden = true
         case 1:
@@ -51,7 +61,7 @@ class ShowcaseViewController: UIViewController {
             self.checkoutBtn.isHidden = true
             choice1.setTitle("Lady #1", for: .normal)
             choice2.setTitle("Lady #2", for: .normal)
-            tf.text = "Which one are you goin for"
+            tf.text = "Which one are you going for"
             self.lady1.isHidden = false
             self.lady2.isHidden = false
         case 2:
@@ -65,7 +75,7 @@ class ShowcaseViewController: UIViewController {
             self.lady2.isHidden = true
         case 3:
             // lady 2
-            tf.text = "Lady 2: Com'on Baby."
+            tf.text = "Lady 2: Sure! if you’ll buy me something to drink."
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
@@ -77,6 +87,14 @@ class ShowcaseViewController: UIViewController {
             break
         }
     }
+    
+    @IBAction func tapText(_ sender: Any) {
+        if (count<size-1){
+            count = count+1
+        }
+        gotoStage()
+    }
+    
     
     @IBAction func checkPressed(_ sender: UIButton) {
         stage = 1
