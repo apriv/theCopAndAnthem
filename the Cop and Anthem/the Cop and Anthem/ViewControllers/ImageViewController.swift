@@ -44,8 +44,24 @@ class ImageViewController: UIViewController {
         self.img6.isHidden = img_bools[6]
         self.img7.isHidden = img_bools[7]
         self.img8.isHidden = img_bools[8]
+        img0.isUserInteractionEnabled = true
+        img1.isUserInteractionEnabled = true
+        img7.isUserInteractionEnabled = true
     }
     
+    
+    @IBAction func toStreet(_ sender: Any) {
+        print(1)
+        performSegue(withIdentifier: "to0", sender: self)
+    }
+    
+    @IBAction func toRestaurant(_ sender: Any) {
+        performSegue(withIdentifier: "to1", sender: self)
+    }
+    
+    @IBAction func toCathedral(_ sender: Any) {
+        performSegue(withIdentifier: "to7", sender: self)
+    }
     
     
 

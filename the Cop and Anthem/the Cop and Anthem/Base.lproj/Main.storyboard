@@ -70,11 +70,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
-                                <rect key="frame" x="25" y="171" width="90" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
                                 <rect key="frame" x="264" y="171" width="90" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -90,6 +85,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Tb-svi">
                                 <rect key="frame" x="148" y="171" width="90" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HWx-SS-yBi" appends="YES" id="WIi-kz-eVo"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant_dark" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-hX-xK8">
                                 <rect key="frame" x="264" y="334" width="90" height="124"/>
@@ -102,6 +101,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-LQ-7Ud">
                                 <rect key="frame" x="153" y="476" width="90" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nQG-xE-sYf" appends="YES" id="jFj-Ol-20M"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="EON-hh-DXm">
                                 <rect key="frame" x="269" y="476" width="90" height="123"/>
@@ -114,6 +117,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
+                                <rect key="frame" x="25" y="171" width="90" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2MD-tR-sdi" appends="YES" id="mDh-Nu-3uT"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F06-UB-Htc"/>
@@ -129,10 +140,27 @@
                         <outlet property="img6" destination="SVY-ak-fLf" id="9au-jF-du8"/>
                         <outlet property="img7" destination="mYt-LQ-7Ud" id="z2U-aJ-Ex9"/>
                         <outlet property="img8" destination="EON-hh-DXm" id="40m-Tw-Kzs"/>
-                        <segue destination="fM8-kc-E5s" kind="show" identifier="to0" id="eco-gy-3ro"/>
+                        <segue destination="fM8-kc-E5s" kind="presentation" identifier="to0" id="crb-2R-xTs"/>
+                        <segue destination="mqm-yW-tF0" kind="presentation" identifier="to1" id="WWK-8l-gIX"/>
+                        <segue destination="KJk-tn-EjK" kind="presentation" identifier="to7" id="Q4G-Oc-oQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd0-k8-haX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2MD-tR-sdi">
+                    <connections>
+                        <action selector="toStreet:" destination="liW-k7-DWT" id="DkE-jP-kb4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HWx-SS-yBi">
+                    <connections>
+                        <action selector="toRestaurant:" destination="liW-k7-DWT" id="MuF-Sx-rkM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nQG-xE-sYf">
+                    <connections>
+                        <action selector="toCathedral:" destination="liW-k7-DWT" id="KHU-yq-N7F"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5569" y="-1372"/>
         </scene>
@@ -1115,8 +1143,10 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IoL-W4-Ye0"/>
+        <segue reference="Cr9-bb-4pO"/>
+        <segue reference="Q4G-Oc-oQa"/>
+        <segue reference="WWK-8l-gIX"/>
         <segue reference="kJU-rm-7jU"/>
-        <segue reference="eco-gy-3ro"/>
+        <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
 </document>
