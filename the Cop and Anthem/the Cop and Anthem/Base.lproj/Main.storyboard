@@ -1027,7 +1027,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-3W-Uow">
-                                <rect key="frame" x="42" y="298" width="292" height="36"/>
+                                <rect key="frame" x="41.5" y="298" width="292" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="0Xz-LE-4wh"/>
@@ -1115,7 +1115,6 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dvn-iF-X8a"/>
         <segue reference="IoL-W4-Ye0"/>
         <segue reference="kJU-rm-7jU"/>
         <segue reference="eco-gy-3ro"/>
