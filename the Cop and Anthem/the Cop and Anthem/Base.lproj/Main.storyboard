@@ -70,83 +70,148 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
-                                <rect key="frame" x="264" y="171" width="90" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Ucj-dZ-foS" appends="YES" id="1vq-95-jBo"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-nb-oFo">
-                                <rect key="frame" x="25" y="334" width="90" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Y2d-dw-Se8" appends="YES" id="JhV-R9-jyo"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="SVY-ak-fLf">
-                                <rect key="frame" x="25" y="476" width="90" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="CzF-Ap-FZ8" appends="YES" id="uWA-No-eLT"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Tb-svi">
-                                <rect key="frame" x="148" y="171" width="90" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="HWx-SS-yBi" appends="YES" id="WIi-kz-eVo"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant_dark" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-hX-xK8">
-                                <rect key="frame" x="264" y="334" width="90" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="rFy-WB-waq" appends="YES" id="WMh-Dh-As7"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="al2-2e-ftg">
-                                <rect key="frame" x="147" y="334" width="90" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aQk-c4-qAY" appends="YES" id="M8U-9p-9ht"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-LQ-7Ud">
-                                <rect key="frame" x="153" y="476" width="90" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="nQG-xE-sYf" appends="YES" id="jFj-Ol-20M"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="EON-hh-DXm">
-                                <rect key="frame" x="269" y="476" width="90" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-Ko-FTz">
-                                <rect key="frame" x="30" y="66" width="154" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-Ko-FTz">
+                                <rect key="frame" x="110.5" y="25" width="154" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="RuV-Vr-ieD"/>
+                                    <constraint firstAttribute="height" constant="52" id="qCg-QY-bTR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
-                                <rect key="frame" x="25" y="171" width="90" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="2MD-tR-sdi" appends="YES" id="mDh-Nu-3uT"/>
-                                </connections>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50p-qE-ecm">
+                                <rect key="frame" x="2.5" y="99.5" width="370" height="468"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Tb-svi">
+                                        <rect key="frame" x="135" y="0.0" width="100.00000000000045" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99.999999999999545" id="LQO-Ie-SPJ"/>
+                                            <constraint firstAttribute="height" constant="143" id="fQO-SV-HSg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="HWx-SS-yBi" appends="YES" id="WIi-kz-eVo"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-TT-sy7">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.00000000000045" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143" id="0LA-EB-r68"/>
+                                            <constraint firstAttribute="width" constant="99.999999999999545" id="s9G-aF-wnK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="2MD-tR-sdi" appends="YES" id="mDh-Nu-3uT"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="SVY-ak-fLf">
+                                        <rect key="frame" x="0.0" y="325" width="100" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143" id="ceH-RR-AEW"/>
+                                            <constraint firstAttribute="width" constant="100" id="wnj-ty-0oz"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CzF-Ap-FZ8" appends="YES" id="uWA-No-eLT"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="women_passerby" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-nb-oFo">
+                                        <rect key="frame" x="0.0" y="162.5" width="100" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="7j1-hl-NiC"/>
+                                            <constraint firstAttribute="height" constant="143" id="aat-td-Nay"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Y2d-dw-Se8" appends="YES" id="JhV-R9-jyo"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="EON-hh-DXm">
+                                        <rect key="frame" x="270" y="325" width="100.00000000000045" height="143"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99.999999999999545" id="ME0-Zm-R1w"/>
+                                            <constraint firstAttribute="height" constant="143" id="uyU-oc-oJL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="al2-2e-ftg">
+                                        <rect key="frame" x="135" y="162.5" width="100" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143" id="jBO-Z6-Zb2"/>
+                                            <constraint firstAttribute="width" constant="100" id="vRT-yT-WQt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="aQk-c4-qAY" appends="YES" id="M8U-9p-9ht"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="mYt-LQ-7Ud">
+                                        <rect key="frame" x="135" y="325" width="100" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Aeh-6F-9gV"/>
+                                            <constraint firstAttribute="height" constant="143" id="MeP-fS-2Du"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="nQG-xE-sYf" appends="YES" id="jFj-Ol-20M"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_dark" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-hX-xK8">
+                                        <rect key="frame" x="270" y="162.5" width="100.00000000000045" height="143"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99.999999999999545" id="06G-KU-qPc"/>
+                                            <constraint firstAttribute="height" constant="143" id="bE9-Oa-ZzG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="rFy-WB-waq" appends="YES" id="WMh-Dh-As7"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="women_austere" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-Cn-jSM">
+                                        <rect key="frame" x="270" y="0.0" width="100" height="143.00000000000011"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142.99999999999989" id="VpU-8m-FdJ"/>
+                                            <constraint firstAttribute="width" constant="100" id="vG0-Py-i2y"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ucj-dZ-foS" appends="YES" id="1vq-95-jBo"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="al2-2e-ftg" firstAttribute="centerX" secondItem="50p-qE-ecm" secondAttribute="centerX" id="06F-dF-b93"/>
+                                    <constraint firstItem="SVY-ak-fLf" firstAttribute="leading" secondItem="50p-qE-ecm" secondAttribute="leading" id="4I5-dj-H72"/>
+                                    <constraint firstItem="0u3-nb-oFo" firstAttribute="centerY" secondItem="50p-qE-ecm" secondAttribute="centerY" id="4te-DC-NR6"/>
+                                    <constraint firstItem="WEL-TT-sy7" firstAttribute="leading" secondItem="50p-qE-ecm" secondAttribute="leading" id="5Jy-Lf-s2S"/>
+                                    <constraint firstAttribute="height" constant="468" id="6b1-RF-ErU"/>
+                                    <constraint firstAttribute="trailing" secondItem="qv5-Cn-jSM" secondAttribute="trailing" id="6gT-kA-o1O"/>
+                                    <constraint firstItem="mYt-LQ-7Ud" firstAttribute="centerX" secondItem="50p-qE-ecm" secondAttribute="centerX" id="7UP-za-NP7"/>
+                                    <constraint firstItem="vRx-Tb-svi" firstAttribute="top" secondItem="50p-qE-ecm" secondAttribute="top" id="99C-hD-dis"/>
+                                    <constraint firstAttribute="trailing" secondItem="dTn-hX-xK8" secondAttribute="trailing" id="AjM-Hi-PJf"/>
+                                    <constraint firstAttribute="width" constant="370" id="Ffn-yY-VPP"/>
+                                    <constraint firstItem="al2-2e-ftg" firstAttribute="centerY" secondItem="50p-qE-ecm" secondAttribute="centerY" id="Gay-Oa-6h1"/>
+                                    <constraint firstItem="dTn-hX-xK8" firstAttribute="centerY" secondItem="50p-qE-ecm" secondAttribute="centerY" id="NzU-dE-ZnP"/>
+                                    <constraint firstItem="vRx-Tb-svi" firstAttribute="centerX" secondItem="50p-qE-ecm" secondAttribute="centerX" id="OPx-2u-vDz"/>
+                                    <constraint firstItem="WEL-TT-sy7" firstAttribute="top" secondItem="50p-qE-ecm" secondAttribute="top" id="Tza-me-0eo"/>
+                                    <constraint firstAttribute="bottom" secondItem="mYt-LQ-7Ud" secondAttribute="bottom" id="eTD-YX-aWE"/>
+                                    <constraint firstAttribute="bottom" secondItem="EON-hh-DXm" secondAttribute="bottom" id="fiq-0T-WbX"/>
+                                    <constraint firstAttribute="bottom" secondItem="SVY-ak-fLf" secondAttribute="bottom" id="gpU-fK-QFD"/>
+                                    <constraint firstItem="qv5-Cn-jSM" firstAttribute="top" secondItem="50p-qE-ecm" secondAttribute="top" id="ljx-c0-xtk"/>
+                                    <constraint firstItem="0u3-nb-oFo" firstAttribute="leading" secondItem="50p-qE-ecm" secondAttribute="leading" id="oAz-5Y-qig"/>
+                                    <constraint firstAttribute="trailing" secondItem="EON-hh-DXm" secondAttribute="trailing" id="swm-Of-Kai"/>
+                                    <constraint firstItem="vRx-Tb-svi" firstAttribute="top" secondItem="50p-qE-ecm" secondAttribute="top" id="uiG-oA-5AD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="50p-qE-ecm" firstAttribute="centerY" secondItem="NlU-mD-W99" secondAttribute="centerY" id="L5k-bl-5Aw"/>
+                            <constraint firstItem="Hpn-Ko-FTz" firstAttribute="centerX" secondItem="NlU-mD-W99" secondAttribute="centerX" id="Ljl-BO-cgg"/>
+                            <constraint firstItem="Hpn-Ko-FTz" firstAttribute="top" secondItem="F06-UB-Htc" secondAttribute="top" constant="5" id="a2a-Wg-iwE"/>
+                            <constraint firstItem="50p-qE-ecm" firstAttribute="centerX" secondItem="NlU-mD-W99" secondAttribute="centerX" id="iQ9-xh-29w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F06-UB-Htc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Archive" id="XRa-sI-Jgz" userLabel="Archive"/>
@@ -211,7 +276,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5478" y="-984"/>
+            <point key="canvasLocation" x="4874" y="-845"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -1194,7 +1259,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06k-D4-bLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2350" y="-1734"/>
+            <point key="canvasLocation" x="3694" y="-1649"/>
         </scene>
     </scenes>
     <resources>
@@ -1211,7 +1276,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V59-Gh-2MS"/>
+        <segue reference="Ki6-w7-och"/>
         <segue reference="Q4G-Oc-oQa"/>
         <segue reference="rPJ-z1-vvO"/>
         <segue reference="vOk-Ed-z5I"/>
