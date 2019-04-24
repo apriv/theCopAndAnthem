@@ -52,8 +52,14 @@ class CathedralViewController: UIViewController {
             tf.text = "You come to a quiet street.\nHere is an old,old church."
         case 1:
             // show choices
-            self.choice1.isHidden = false
-            self.choice2.isHidden = false
+            if(count == size-1){
+                self.choice1.isHidden = false
+                self.choice2.isHidden = false
+            }
+            else{
+                self.choice1.isHidden = true
+                self.choice2.isHidden = true
+            }
             self.followCop.isHidden = true
             self.goInside.isHidden = true
             tf.text = text[count]
@@ -63,20 +69,29 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: You are loafing, come with me."
+            tf.text = "Cop: You think I believe that?"
         case 3:
             // Confessing
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: No you are not come with me."
+            tf.text = "Cop: No you are not. come along."
             
         default:
             // do nothing
             break
         }
     }
+    
+    @IBAction func tapText(_ sender: Any) {
+        if (count<size-1){
+            stage = 1
+            count = count+1
+        }
+        gotoStage()
+    }
+    
     
     
     @IBAction func goInsidePressed(_ sender: UIButton) {
