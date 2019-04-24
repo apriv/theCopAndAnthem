@@ -126,7 +126,7 @@
                                     <constraint firstAttribute="height" constant="32" id="Jhm-fw-RVr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Choice 1">
+                                <state key="normal" title="try something">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -1031,7 +1031,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jg7-95-E8L"/>
-        <segue reference="td0-9Z-afw"/>
+        <segue reference="V59-Gh-2MS"/>
+        <segue reference="Soe-H7-f4b"/>
     </inferredMetricsTieBreakers>
 </document>
