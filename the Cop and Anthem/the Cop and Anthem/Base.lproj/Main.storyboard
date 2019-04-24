@@ -21,38 +21,40 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_day" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-lb-zTB">
                                 <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the Cop and Anthem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-dq-VA8">
-                                <rect key="frame" x="72" y="164" width="231" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the Cop and Anthem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-dq-VA8">
+                                <rect key="frame" x="57.5" y="140" width="260" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="8Pd-jX-Hm6"/>
+                                    <constraint firstAttribute="width" constant="260" id="lVy-lb-cfp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-Dv-NJh">
-                                <rect key="frame" x="101" y="234" width="172" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-Dv-NJh">
+                                <rect key="frame" x="101.5" y="292" width="172" height="34"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="2lJ-es-rcz"/>
+                                    <constraint firstAttribute="height" constant="34" id="bun-kV-h5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Begin Journey -&gt;"/>
                                 <connections>
                                     <segue destination="fM8-kc-E5s" kind="show" identifier="toMenu" id="isz-S7-ju2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljm-2P-4FI">
-                                <rect key="frame" x="166" y="356" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="o"/>
-                                <connections>
-                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0t-QU-Xby"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ehF-Dv-NJh" firstAttribute="top" secondItem="tJ4-dq-VA8" secondAttribute="bottom" constant="120" id="AHp-no-fhh"/>
+                            <constraint firstItem="tJ4-dq-VA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JC0-2r-Xkc"/>
                             <constraint firstItem="0KL-lb-zTB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NVc-1I-823"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0KL-lb-zTB" secondAttribute="trailing" id="dPq-Eb-HCJ"/>
                             <constraint firstItem="0KL-lb-zTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i9y-t4-5gk"/>
                             <constraint firstAttribute="bottom" secondItem="0KL-lb-zTB" secondAttribute="bottom" id="jkI-tC-QlL"/>
+                            <constraint firstItem="tJ4-dq-VA8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="jmN-Ky-Nun"/>
+                            <constraint firstItem="ehF-Dv-NJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXY-U3-c05"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -60,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.5999999999999" y="-664.31784107946032"/>
+            <point key="canvasLocation" x="1631" y="-684"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="IOF-Qe-16H">
@@ -276,7 +278,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4874" y="-845"/>
+            <point key="canvasLocation" x="3940" y="-804"/>
         </scene>
         <!--Street Day View Controller-->
         <scene sceneID="r7s-xC-66D">
@@ -445,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="1151"/>
+            <point key="canvasLocation" x="1834" y="976"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="tk7-6F-H4h">
@@ -747,9 +749,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="su8-8z-xbY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="su8-8z-xbY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYG-3s-gSb">
                                 <rect key="frame" x="34.5" y="72.5" width="306" height="522"/>
@@ -794,8 +795,12 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ts1-Hv-gO0" firstAttribute="trailing" secondItem="su8-8z-xbY" secondAttribute="trailing" id="3ma-OS-14k"/>
                             <constraint firstItem="rYG-3s-gSb" firstAttribute="centerY" secondItem="j0R-8k-PKg" secondAttribute="centerY" id="4UO-ez-RTl"/>
                             <constraint firstItem="rYG-3s-gSb" firstAttribute="centerX" secondItem="j0R-8k-PKg" secondAttribute="centerX" id="TDZ-Kc-UuW"/>
+                            <constraint firstItem="ts1-Hv-gO0" firstAttribute="bottom" secondItem="su8-8z-xbY" secondAttribute="bottom" id="fGo-Ya-Few"/>
+                            <constraint firstItem="su8-8z-xbY" firstAttribute="top" secondItem="j0R-8k-PKg" secondAttribute="top" id="oIM-TS-NVk"/>
+                            <constraint firstItem="su8-8z-xbY" firstAttribute="leading" secondItem="ts1-Hv-gO0" secondAttribute="leading" id="vc0-bL-Z9F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ts1-Hv-gO0"/>
                     </view>
@@ -803,7 +808,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKC-aj-Mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2981.5999999999999" y="-664.31784107946032"/>
+            <point key="canvasLocation" x="6607" y="-803"/>
         </scene>
         <!--Street Night-->
         <scene sceneID="CDB-ma-pb9">
@@ -1276,13 +1281,13 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ki6-w7-och"/>
-        <segue reference="Q4G-Oc-oQa"/>
-        <segue reference="rPJ-z1-vvO"/>
-        <segue reference="vOk-Ed-z5I"/>
-        <segue reference="z5c-YS-iFf"/>
-        <segue reference="BLn-3d-IvF"/>
-        <segue reference="WWK-8l-gIX"/>
+        <segue reference="vNV-GN-mca"/>
+        <segue reference="oiu-D3-hZs"/>
+        <segue reference="pYO-gH-tok"/>
+        <segue reference="knp-4e-Ec6"/>
+        <segue reference="j4t-cP-7Hq"/>
+        <segue reference="BSS-2Z-s3H"/>
+        <segue reference="Dvn-iF-X8a"/>
         <segue reference="Soe-H7-f4b"/>
         <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
