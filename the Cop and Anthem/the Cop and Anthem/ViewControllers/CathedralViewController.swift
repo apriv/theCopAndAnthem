@@ -10,6 +10,18 @@ import UIKit
 
 class CathedralViewController: UIViewController {
     var stage = 0
+    var count = 0
+    let text = ["The moon is above, peaceful and bright.",
+                "Through one colored-glass window comes a soft light.",
+                "Sweet music one to your ears.",
+                "The anthem sudden and wonderful change in his soul.",
+                "It reminds you of the life containing such things as mothers and flowers and high hopes and friends and clean thoughts and clean clothes.",
+                "You see your worthless days, your wrong desires, his dead hopes, the lost power of his mind.",
+                "You would fight to change your life.",
+                "You would make a man of himself again.",
+                "You feel a hand on your arm--",
+                "Cop: What are you doing here?"]
+    lazy var size = text.count
     @IBOutlet weak var tf: UITextView!
     @IBOutlet weak var choice1: UIButton!
     @IBOutlet weak var choice2: UIButton!
@@ -37,14 +49,14 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = true
             self.goInside.isHidden = false
-            tf.text = "What a great life. I want to have a job, be a real man. "
+            tf.text = "You come to a quiet street.\nHere is an old,old church."
         case 1:
             // show choices
             self.choice1.isHidden = false
             self.choice2.isHidden = false
             self.followCop.isHidden = true
             self.goInside.isHidden = true
-            tf.text = "Cop: What are you doing here?"
+            tf.text = text[count]
         case 2:
             // Nothing
             self.choice1.isHidden = true
