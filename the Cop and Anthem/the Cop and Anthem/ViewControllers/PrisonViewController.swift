@@ -33,7 +33,7 @@ class PrisonViewController: UIViewController {
         case 0:
             // hide choices
             self.enjoy.isHidden = false
-            tf.text = "Your dream finally come true. But you just changed your mind 30 sec ago."
+            tf.text = "You ended up with 3 month in jail island. Your dream finally come true. But you just changed your mind 30 sec ago."
         case 1:
             // show choices
             
