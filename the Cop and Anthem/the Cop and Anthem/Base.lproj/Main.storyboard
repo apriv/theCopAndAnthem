@@ -139,11 +139,14 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTK-br-A5t">
-                                <rect key="frame" x="41" y="107" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTK-br-A5t">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="597-YC-u12"/>
+                                    <constraint firstAttribute="height" constant="128" id="umx-ZZ-syE"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -156,6 +159,8 @@
                         <constraints>
                             <constraint firstItem="RfM-lB-Qrr" firstAttribute="trailing" secondItem="IOY-3G-O99" secondAttribute="trailing" id="9LY-FK-WC0"/>
                             <constraint firstAttribute="bottom" secondItem="RfM-lB-Qrr" secondAttribute="bottom" id="FmG-DC-38q"/>
+                            <constraint firstItem="BTK-br-A5t" firstAttribute="top" secondItem="IOY-3G-O99" secondAttribute="top" constant="90" id="QOY-ol-Mcc"/>
+                            <constraint firstItem="BTK-br-A5t" firstAttribute="centerX" secondItem="Js5-eu-dTx" secondAttribute="centerX" id="R1S-0k-52n"/>
                             <constraint firstItem="RfM-lB-Qrr" firstAttribute="top" secondItem="Js5-eu-dTx" secondAttribute="top" id="xy5-5s-D60"/>
                             <constraint firstItem="RfM-lB-Qrr" firstAttribute="leading" secondItem="IOY-3G-O99" secondAttribute="leading" id="zr2-ye-SJm"/>
                         </constraints>
@@ -294,11 +299,14 @@
                                     <action selector="choice1Pressed:" destination="mqm-yW-tF0" eventType="touchUpInside" id="KVr-14-SpK"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-7y-Hku">
-                                <rect key="frame" x="52" y="107" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-7y-Hku">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="4QG-kf-s62"/>
+                                    <constraint firstAttribute="height" constant="128" id="f6N-u3-sns"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -323,7 +331,9 @@
                         <constraints>
                             <constraint firstItem="hIo-i0-3B9" firstAttribute="bottom" secondItem="fNB-bW-Jz3" secondAttribute="bottom" id="GJL-kL-NcY"/>
                             <constraint firstItem="hIo-i0-3B9" firstAttribute="leading" secondItem="fNB-bW-Jz3" secondAttribute="leading" id="JpC-cY-lDE"/>
+                            <constraint firstItem="xc3-7y-Hku" firstAttribute="top" secondItem="fNB-bW-Jz3" secondAttribute="top" constant="90" id="evM-8n-t2j"/>
                             <constraint firstItem="fNB-bW-Jz3" firstAttribute="trailing" secondItem="hIo-i0-3B9" secondAttribute="trailing" id="pBq-cL-SPO"/>
+                            <constraint firstItem="xc3-7y-Hku" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="sS6-Vj-rwC"/>
                             <constraint firstItem="hIo-i0-3B9" firstAttribute="top" secondItem="Yxm-7r-VCt" secondAttribute="top" id="yot-bN-grD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fNB-bW-Jz3"/>
@@ -357,10 +367,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="108-fe-s0y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-FB-Fta">
-                                <rect key="frame" x="41" y="116" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-FB-Fta">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="8uB-4z-MuD"/>
+                                    <constraint firstAttribute="height" constant="128" id="tcV-hK-BLj"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -428,6 +441,8 @@
                             <constraint firstItem="108-fe-s0y" firstAttribute="trailing" secondItem="Us6-Bm-VyR" secondAttribute="trailing" id="2rz-W1-Kdo"/>
                             <constraint firstItem="108-fe-s0y" firstAttribute="leading" secondItem="Us6-Bm-VyR" secondAttribute="leading" id="2uj-2N-yup"/>
                             <constraint firstItem="108-fe-s0y" firstAttribute="top" secondItem="hS4-EU-65T" secondAttribute="top" id="52Y-PP-sfO"/>
+                            <constraint firstItem="2eB-FB-Fta" firstAttribute="top" secondItem="Us6-Bm-VyR" secondAttribute="top" constant="90" id="NR3-PU-xNR"/>
+                            <constraint firstItem="2eB-FB-Fta" firstAttribute="centerX" secondItem="hS4-EU-65T" secondAttribute="centerX" id="s4J-Og-oH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Us6-Bm-VyR"/>
                     </view>
@@ -482,10 +497,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street_night" translatesAutoresizingMaskIntoConstraints="NO" id="bXq-LO-wy1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3W-GS-i8I">
-                                <rect key="frame" x="41" y="96" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3W-GS-i8I">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="0JE-xy-mhJ"/>
+                                    <constraint firstAttribute="height" constant="128" id="j9K-M7-Yj5"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -511,6 +529,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="M3W-GS-i8I" firstAttribute="top" secondItem="sKT-Dd-OkG" secondAttribute="top" constant="90" id="ARY-ip-Lhn"/>
+                            <constraint firstItem="M3W-GS-i8I" firstAttribute="centerX" secondItem="FqE-z7-OpD" secondAttribute="centerX" id="S2H-P0-l9D"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="leading" secondItem="sKT-Dd-OkG" secondAttribute="leading" id="Ytt-8f-dDw"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="bottom" secondItem="sKT-Dd-OkG" secondAttribute="bottom" id="gTa-lf-3GN"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="trailing" secondItem="sKT-Dd-OkG" secondAttribute="trailing" id="gi0-Wi-jLG"/>
@@ -537,10 +557,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="Ra0-LA-reG">
                                 <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-y1-0D1">
-                                <rect key="frame" x="41" y="110" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-y1-0D1">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="2Sp-ZW-iJi"/>
+                                    <constraint firstAttribute="height" constant="128" id="MMG-db-IQA"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -567,8 +590,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ra0-LA-reG" firstAttribute="bottom" secondItem="cMZ-an-7RO" secondAttribute="bottom" id="8Mr-XN-AmD"/>
+                            <constraint firstItem="8JS-y1-0D1" firstAttribute="top" secondItem="cMZ-an-7RO" secondAttribute="top" constant="90" id="MMz-Jf-2Wq"/>
                             <constraint firstItem="Ra0-LA-reG" firstAttribute="leading" secondItem="cMZ-an-7RO" secondAttribute="leading" id="bda-Wb-M9a"/>
                             <constraint firstItem="cMZ-an-7RO" firstAttribute="trailing" secondItem="Ra0-LA-reG" secondAttribute="trailing" id="eC5-OH-kgT"/>
+                            <constraint firstItem="8JS-y1-0D1" firstAttribute="centerX" secondItem="vjV-fy-SqY" secondAttribute="centerX" id="lka-05-hvD"/>
                             <constraint firstItem="Ra0-LA-reG" firstAttribute="top" secondItem="vjV-fy-SqY" secondAttribute="top" id="tV5-qu-RIL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cMZ-an-7RO"/>
@@ -592,11 +617,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showcase" translatesAutoresizingMaskIntoConstraints="NO" id="bux-EY-6df">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85F-YY-UmR">
-                                <rect key="frame" x="41" y="103" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85F-YY-UmR">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="JSE-00-2i7"/>
+                                    <constraint firstAttribute="height" constant="128" id="gV8-kt-f5c"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -629,7 +657,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBH-nq-5Lj">
-                                <rect key="frame" x="0.0" y="96" width="375" height="429"/>
+                                <rect key="frame" x="0.0" y="99" width="375" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -641,7 +669,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="85F-YY-UmR" firstAttribute="top" secondItem="5NA-Kd-E2n" secondAttribute="top" constant="90" id="0BC-ZG-UCH"/>
                             <constraint firstItem="bux-EY-6df" firstAttribute="trailing" secondItem="5NA-Kd-E2n" secondAttribute="trailing" id="3g9-ap-gqg"/>
+                            <constraint firstItem="85F-YY-UmR" firstAttribute="centerX" secondItem="tuJ-pW-WYa" secondAttribute="centerX" id="DoF-Rq-2wx"/>
                             <constraint firstItem="bux-EY-6df" firstAttribute="leading" secondItem="5NA-Kd-E2n" secondAttribute="leading" id="e9X-Ih-JaA"/>
                             <constraint firstItem="bux-EY-6df" firstAttribute="bottom" secondItem="5NA-Kd-E2n" secondAttribute="bottom" id="gnh-CI-WPp"/>
                             <constraint firstItem="bux-EY-6df" firstAttribute="top" secondItem="tuJ-pW-WYa" secondAttribute="top" id="sJV-fT-LdZ"/>
@@ -682,10 +712,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prison" translatesAutoresizingMaskIntoConstraints="NO" id="s0W-t1-xFx">
                                 <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cja-ki-7qG">
-                                <rect key="frame" x="41" y="113" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cja-ki-7qG">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="aky-Af-UTo"/>
+                                    <constraint firstAttribute="width" constant="292" id="j5N-rE-WaZ"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -706,8 +739,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="bottom" secondItem="SMJ-c2-UHt" secondAttribute="bottom" id="0E9-dD-WQ5"/>
+                            <constraint firstItem="cja-ki-7qG" firstAttribute="centerX" secondItem="qz2-rd-wuI" secondAttribute="centerX" id="XhU-UT-1cU"/>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="leading" secondItem="SMJ-c2-UHt" secondAttribute="leading" id="h4B-kA-Egj"/>
                             <constraint firstItem="s0W-t1-xFx" firstAttribute="top" secondItem="qz2-rd-wuI" secondAttribute="top" id="iTD-Ba-amC"/>
+                            <constraint firstItem="cja-ki-7qG" firstAttribute="top" secondItem="SMJ-c2-UHt" secondAttribute="top" constant="90" id="vuU-0V-FCs"/>
                             <constraint firstItem="SMJ-c2-UHt" firstAttribute="trailing" secondItem="s0W-t1-xFx" secondAttribute="trailing" id="wUW-Ib-tRb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SMJ-c2-UHt"/>
@@ -733,13 +768,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cathedral" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-CQ-DLQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYX-OE-vNB">
-                                <rect key="frame" x="41" y="106" width="292" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYX-OE-vNB">
+                                <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="h7D-La-yex"/>
+                                    <constraint firstAttribute="height" constant="128" id="iue-zJ-JgH"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eMn-kV-12W" appends="YES" id="Kd2-ch-g3p"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-Fl-WcO">
                                 <rect key="frame" x="41" y="294" width="292" height="36"/>
@@ -793,8 +835,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="trailing" secondItem="oCG-Qo-lP9" secondAttribute="trailing" id="9nN-ST-wgP"/>
+                            <constraint firstItem="YYX-OE-vNB" firstAttribute="centerX" secondItem="2hF-tn-PNF" secondAttribute="centerX" id="Ge5-k2-45t"/>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="top" secondItem="2hF-tn-PNF" secondAttribute="top" id="LMw-SS-m4A"/>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="bottom" secondItem="oCG-Qo-lP9" secondAttribute="bottom" id="LrW-xp-fYb"/>
+                            <constraint firstItem="YYX-OE-vNB" firstAttribute="top" secondItem="oCG-Qo-lP9" secondAttribute="top" constant="90" id="VwN-n4-Adk"/>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="leading" secondItem="oCG-Qo-lP9" secondAttribute="leading" id="Wuo-27-83q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oCG-Qo-lP9"/>
@@ -809,6 +853,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgd-Jn-Ogj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eMn-kV-12W"/>
             </objects>
             <point key="canvasLocation" x="6065" y="87"/>
         </scene>
@@ -847,7 +892,7 @@
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jg7-95-E8L"/>
+        <segue reference="IoL-W4-Ye0"/>
         <segue reference="td0-9Z-afw"/>
     </inferredMetricsTieBreakers>
 </document>
