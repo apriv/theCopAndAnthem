@@ -223,7 +223,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92728316783905029" green="0.96500420570373535" blue="0.99981790781021118" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="50p-qE-ecm" firstAttribute="centerY" secondItem="NlU-mD-W99" secondAttribute="centerY" id="L5k-bl-5Aw"/>
                             <constraint firstItem="Hpn-Ko-FTz" firstAttribute="centerX" secondItem="NlU-mD-W99" secondAttribute="centerX" id="Ljl-BO-cgg"/>
@@ -1321,14 +1321,14 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IoL-W4-Ye0"/>
-        <segue reference="oiu-D3-hZs"/>
-        <segue reference="pYO-gH-tok"/>
-        <segue reference="knp-4e-Ec6"/>
-        <segue reference="j4t-cP-7Hq"/>
-        <segue reference="BSS-2Z-s3H"/>
-        <segue reference="Dvn-iF-X8a"/>
+        <segue reference="EXQ-3t-d1s"/>
+        <segue reference="Q4G-Oc-oQa"/>
+        <segue reference="rPJ-z1-vvO"/>
+        <segue reference="vOk-Ed-z5I"/>
+        <segue reference="z5c-YS-iFf"/>
+        <segue reference="BLn-3d-IvF"/>
+        <segue reference="WWK-8l-gIX"/>
         <segue reference="3dy-Nm-FNa"/>
-        <segue reference="isz-S7-ju2"/>
+        <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
 </document>
