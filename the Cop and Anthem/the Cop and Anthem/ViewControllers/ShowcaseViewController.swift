@@ -59,14 +59,14 @@ class ShowcaseViewController: UIViewController {
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.checkoutBtn.isHidden = true
-            choice1.setTitle("Lady #1", for: .normal)
-            choice2.setTitle("Lady #2", for: .normal)
-            tf.text = "Which one are you going for"
+            choice1.setTitle("Left", for: .normal)
+            choice2.setTitle("Right", for: .normal)
+            tf.text = "Which one are you talking to?"
             self.lady1.isHidden = false
             self.lady2.isHidden = false
         case 2:
             //lady 1
-            tf.text = "Lady 1: Sure. I'd have spoke to you sooner, but the cop was watching."
+            tf.text = "Lady: Sure. I'd have spoke to you sooner, but the cop was watching."
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
@@ -75,7 +75,7 @@ class ShowcaseViewController: UIViewController {
             self.lady2.isHidden = true
         case 3:
             // lady 2
-            tf.text = "Lady 2: Sure, if you'll buy me a cup of drink. I'd have spoke to you sooner, but the cop was watching."
+            tf.text = "Lady: Sure, if you'll buy me a cup of drink. I'd have spoke to you sooner, but the cop was watching."
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false

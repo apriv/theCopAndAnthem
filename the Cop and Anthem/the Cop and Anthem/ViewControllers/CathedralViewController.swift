@@ -13,7 +13,7 @@ class CathedralViewController: UIViewController {
     var count = 0
     let text = ["The moon is above, peaceful and bright.",
                 "Through one colored-glass window comes a soft light.",
-                "The anthem sudden and wonderful change in his soul.",
+                "The anthem sudden and wonderful change in your soul.",
                 "Sweet music caught and held you transfixed against the convolutions of the iron fence.",
                 "It reminds you of the life containing such things as mothers and roses and ambitions and friends and immaculate thoughts and collars.",
                 "You see your worthless days, your wrong desires, your dead hopes, the lost power of your mind.",
@@ -69,14 +69,14 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: You think I believe that? Come with me."
+            tf.text = "Cop: Doing nothing? Come with me."
         case 3:
             // Confessing
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: Doing nothing? Come with me."
+            tf.text = "Cop: You think I believe that? Come with me."
             
         default:
             // do nothing

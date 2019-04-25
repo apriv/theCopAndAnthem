@@ -24,7 +24,7 @@ class RestaurantViewController: UIViewController {
     let text2 = ["No one stopped you.",
                  "You have a great dinner.",
                  "You: Money and I are strangers. Just call the police!",
-                 "Waiter: No cop for youse.  Hey, Con!",
+                 "Waiter: No cop for youse.  \n      Hey, Con!",
                  "You got threw on the street by two waiters."]
     lazy var size = text.count
     lazy var size2 = text2.count
@@ -59,7 +59,7 @@ class RestaurantViewController: UIViewController {
             self.stepInsideBtn.isHidden = true
             choice1.setTitle("Walk inside direcly", for: .normal)
             choice2.setTitle("Cover your legs with coat", for: .normal)
-            tf.text = "You are sure you looked alright, but not sure about pants. \nYou choose to:"
+            tf.text = "You think you look alright, but not sure about pants. \nYou choose to:"
         case 2:
             //choice 1
             tf.text = "Waiter: You can't afford here. Get out!"

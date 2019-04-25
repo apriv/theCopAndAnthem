@@ -17,7 +17,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
                             "Break a showcase",
                             "//Break the peace",
                             "//Rob someone",
-                            "Harass a lady"]
+                            "Take advantage of a lady"]
     let cellReuseIdentifier = "cell"
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

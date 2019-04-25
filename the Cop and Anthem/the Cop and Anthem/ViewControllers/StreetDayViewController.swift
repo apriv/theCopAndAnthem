@@ -12,10 +12,10 @@ class StreetDayViewController: UIViewController, UITabBarControllerDelegate {
     
     var stage = 0 // to control stage
     var count = 0
-    let text = ["A dead leaf fell in Soapy's lap. That was Jack Frost's card.",
-                "This is a sign that winter is coming",
+    let text = ["A dead leaf fell in your lap. That was Jack Frost's card.",
+                "This is a sign that winter is coming.",
                 "You used to live on the bench at Madison square, but now, you need another place to stay.",
-                "Three months on the Island was what his soul craved. ",
+                "Three months on the Island was what your soul craved. ",
                 "Three months of assured board and bed and congenial company, safe from Boreas and bluecoats, seemed to you the essence of things desirable.",
                 "You come to the street.",
                 "There are many ways of doing this so that cop arrrest you to the jail."]
