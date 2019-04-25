@@ -25,6 +25,7 @@
 		117D17AB226E4BF900ED9835 /* ChoiceUiTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */; };
 		11A2645A226D0434003DE61B /* StreetDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A26459226D0434003DE61B /* StreetDayViewController.swift */; };
 		B10007BC227017E1008D7B42 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007BB227017E1008D7B42 /* ImageViewController.swift */; };
+		B10007C8227168A7008D7B42 /*  OldThreads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B10007C7227168A7008D7B42 /*  OldThreads.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		117D17AA226E4BF900ED9835 /* ChoiceUiTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceUiTableView.swift; sourceTree = "<group>"; };
 		11A26459226D0434003DE61B /* StreetDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDayViewController.swift; sourceTree = "<group>"; };
 		B10007BB227017E1008D7B42 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		B10007C7227168A7008D7B42 /*  OldThreads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = " OldThreads.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		1106E597226BC9A800598DD0 = {
 			isa = PBXGroup;
 			children = (
+				B10007C6227168A7008D7B42 /* Sound */,
 				11A26458226D03C2003DE61B /* ViewControllers */,
 				1106E5A2226BC9A800598DD0 /* the Cop and Anthem */,
 				1106E5A1226BC9A800598DD0 /* Products */,
@@ -110,6 +113,14 @@
 			);
 			name = ViewControllers;
 			path = "the Cop and Anthem/ViewControllers";
+			sourceTree = "<group>";
+		};
+		B10007C6227168A7008D7B42 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B10007C7227168A7008D7B42 /*  OldThreads.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				1106E5AE226BC9AA00598DD0 /* LaunchScreen.storyboard in Resources */,
 				1106E5AB226BC9AA00598DD0 /* Assets.xcassets in Resources */,
 				1106E5A9226BC9A800598DD0 /* Main.storyboard in Resources */,
+				B10007C8227168A7008D7B42 /*  OldThreads.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

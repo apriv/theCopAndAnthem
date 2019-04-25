@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PrisonViewController: UIViewController {
     var stage = 0
     @IBOutlet weak var tf: UITextView!
     @IBOutlet weak var enjoy: UIButton!
+    let AssortedMusics = Bundle.main.path(forResource: " OldThreads", ofType: ".mp3")
+    var music = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Add Background Music
+        music = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: AssortedMusics!))
+        
+        print(self.music.isPlaying)
+        music.prepareToPlay()
+        music.numberOfLoops = -1
+        music.play()
         // Set gesture to menu
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -53,6 +62,7 @@ class PrisonViewController: UIViewController {
     
     @IBAction func enjoyPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "toMenu", sender: self)
+        music.stop()
     }
     
     
