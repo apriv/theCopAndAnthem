@@ -50,8 +50,12 @@ class RestaurantViewController: UIViewController {
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = true
-            self.stepInsideBtn.isHidden = true
-            self.waiter.isHidden = true
+            if(count == size-1){
+                self.stepInsideBtn.isHidden = false
+            }
+            else{
+                self.stepInsideBtn.isHidden = true
+            }
             tf.text = text[count]
         case 1:
             // waiter talk
@@ -59,7 +63,6 @@ class RestaurantViewController: UIViewController {
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
-            self.waiter.isHidden = false
             choice1.setTitle("Walk inside direcly", for: .normal)
             choice2.setTitle("Cover your legs with coat", for: .normal)
             tf.text = "You think you look alright, but not sure about pants. \nYou choose to:"
@@ -78,11 +81,7 @@ class RestaurantViewController: UIViewController {
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
         case 4:
-            tf.text = text[count]
-            self.stepInsideBtn.isHidden = false
-        case 5:
             tf.text = text2[count2]
-            self.waiter.isHidden = true
             self.stepInsideBtn.isHidden = true
             self.tryElseBtn.isHidden = false
         default:
@@ -110,15 +109,12 @@ class RestaurantViewController: UIViewController {
                 count2 = count2+1
             }
             else{
-                stage = 5;
+                stage = 4;
             }
         }
         else{
             if (count<size-1){
                 count = count+1
-            }
-            else{
-                stage = 4;
             }
         }
         
@@ -142,13 +138,13 @@ class RestaurantViewController: UIViewController {
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
