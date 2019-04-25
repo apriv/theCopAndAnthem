@@ -76,7 +76,7 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: No you are not. Come with me."
+            tf.text = "Cop: Doing nothing? Come with me."
             
         default:
             // do nothing
