@@ -13,14 +13,14 @@ class CathedralViewController: UIViewController {
     var count = 0
     let text = ["The moon is above, peaceful and bright.",
                 "Through one colored-glass window comes a soft light.",
-                "Sweet music one to your ears.",
                 "The anthem sudden and wonderful change in his soul.",
-                "It reminds you of the life containing such things as mothers and flowers and high hopes and friends and clean thoughts and clean clothes.",
-                "You see your worthless days, your wrong desires, his dead hopes, the lost power of his mind.",
+                "Sweet music caught and held you transfixed against the convolutions of the iron fence.",
+                "It reminds you of the life containing such things as mothers and roses and ambitions and friends and immaculate thoughts and collars.",
+                "You see your worthless days, your wrong desires, your dead hopes, the lost power of your mind.",
                 "You would fight to change your life.",
-                "You would make a man of himself again.",
-                "You feel a hand on your arm--",
-                "Cop: What are you doing here?"]
+                "You would make a man of yourself again.",
+                "You feel a hand on your arm ---",
+                "Cop: Hey, what are you doing here?"]
     lazy var size = text.count
     @IBOutlet weak var tf: UITextView!
     @IBOutlet weak var choice1: UIButton!
@@ -49,7 +49,7 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = true
             self.goInside.isHidden = false
-            tf.text = "You come to a quiet street.\nHere is an old,old church."
+            tf.text = "You come to a quiet street.\nHere is an old, old church."
         case 1:
             // show choices
             if(count == size-1){
@@ -69,14 +69,14 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: You think I believe that?"
+            tf.text = "Cop: You think I believe that? Come with me."
         case 3:
             // Confessing
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.followCop.isHidden = false
             self.goInside.isHidden = true
-            tf.text = "Cop: No you are not. come along."
+            tf.text = "Cop: No you are not. Come with me."
             
         default:
             // do nothing

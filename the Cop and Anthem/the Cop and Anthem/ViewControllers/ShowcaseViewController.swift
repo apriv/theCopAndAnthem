@@ -66,7 +66,7 @@ class ShowcaseViewController: UIViewController {
             self.lady2.isHidden = false
         case 2:
             //lady 1
-            tf.text = "Lady 1: Com'on Baby."
+            tf.text = "Lady 1: Sure. I'd have spoke to you sooner, but the cop was watching."
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false
@@ -75,7 +75,7 @@ class ShowcaseViewController: UIViewController {
             self.lady2.isHidden = true
         case 3:
             // lady 2
-            tf.text = "Lady 2: Sure! if you’ll buy me something to drink."
+            tf.text = "Lady 2: Sure, if you'll buy me a cup of drink. I'd have spoke to you sooner, but the cop was watching."
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false

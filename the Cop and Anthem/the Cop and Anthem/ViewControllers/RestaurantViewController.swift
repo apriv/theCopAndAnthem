@@ -18,14 +18,13 @@ class RestaurantViewController: UIViewController {
     var stage = 0
     var count = 0
     var count2 = 0
-    let text = ["Maybe the most pleasant way is to go and have a good dinner at some fine restaurant",
-                "Then you can say no money to pay",
-                "Then the police will be called",
+    let text = ["The pleasantest was to dine luxuriously at some expensive restaurant.",
+                "And then, after declaring insolvency, be handed over quietly and without uproar to a policeman.",
                 "Thinking this way, you stopped at a large and brightly lighted restaurant."]
     let text2 = ["No one stopped you.",
-                 "You have a big dinner.",
+                 "You have a great dinner.",
                  "You: Money and I are strangers. Just call the police!",
-                 "Waiter: No police for you!",
+                 "Waiter: No cop for youse.  Hey, Con!",
                  "You got threw on the street by two waiters."]
     lazy var size = text.count
     lazy var size2 = text2.count
@@ -58,12 +57,12 @@ class RestaurantViewController: UIViewController {
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
-            choice1.setTitle("Directly go into restaurant", for: .normal)
-            choice2.setTitle("Use coat to cover your leg", for: .normal)
+            choice1.setTitle("Walk inside direcly", for: .normal)
+            choice2.setTitle("Cover your legs with coat", for: .normal)
             tf.text = "You are sure you looked alright, but not sure about pants. \nYou choose to:"
         case 2:
             //choice 1
-            tf.text = "Waiter: You cannot afford this restaurant. Get out!"
+            tf.text = "Waiter: You can't afford here. Get out!"
             self.choice1.isHidden = true
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = false

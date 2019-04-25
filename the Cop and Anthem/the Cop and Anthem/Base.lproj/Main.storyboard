@@ -303,7 +303,7 @@
                                     <constraint firstAttribute="height" constant="32" id="Jhm-fw-RVr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="try something">
+                                <state key="normal" title="Walk Around">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -468,7 +468,7 @@
                                     <constraint firstAttribute="height" constant="32" id="tmU-Ga-9WS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Choice 2">
+                                <state key="normal" title="Cover your legs with coat">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -647,7 +647,7 @@
                                             <constraint firstAttribute="height" constant="36" id="JcT-cT-Dyd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Lady 2">
+                                        <state key="normal" title="Right">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -676,7 +676,7 @@
                                             <constraint firstAttribute="width" constant="130" id="BaL-4Y-RGm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Lady 1">
+                                        <state key="normal" title="Left">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -1281,14 +1281,14 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vNV-GN-mca"/>
+        <segue reference="IoL-W4-Ye0"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
         <segue reference="j4t-cP-7Hq"/>
         <segue reference="BSS-2Z-s3H"/>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="Soe-H7-f4b"/>
+        <segue reference="td0-9Z-afw"/>
         <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
 </document>
