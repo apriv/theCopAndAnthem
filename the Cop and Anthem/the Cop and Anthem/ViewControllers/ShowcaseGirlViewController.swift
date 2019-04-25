@@ -74,9 +74,14 @@ class ShowcaseGirlViewController: UIViewController {
     
     
     @IBAction func tapText(_ sender: Any) {
-        stage = 2
-        if (count<size-1){
-            count = count+1
+        if(stage == 0){
+            gotoStage()
+        }
+        else{
+            stage = 2
+            if (count<size-1){
+                count = count+1
+            }
         }
         gotoStage()
     }
