@@ -50,9 +50,11 @@ class CathedralViewController: UIViewController {
             self.choice2.isHidden = true
             self.followCop.isHidden = true
             self.goInside.isHidden = false
+            self.cop.isHidden = true
             tf.text = "You come to a quiet street.\nHere is an old, old church."
         case 1:
             // show choices
+            self.cop.isHidden = false
             if(count == size-1){
                 self.choice1.isHidden = false
                 self.choice2.isHidden = false
