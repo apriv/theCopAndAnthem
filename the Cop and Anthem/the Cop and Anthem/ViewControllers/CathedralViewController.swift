@@ -9,6 +9,7 @@
 import UIKit
 
 class CathedralViewController: UIViewController {
+    @IBOutlet weak var cop: UIImageView!
     var stage = 0
     var count = 0
     let text = ["The moon is above, peaceful and bright.",

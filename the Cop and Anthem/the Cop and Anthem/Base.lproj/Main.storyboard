@@ -1219,11 +1219,20 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <action selector="goInsidePressed:" destination="KJk-tn-EjK" eventType="touchUpInside" id="d0Y-U7-J6m"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cop_fat" translatesAutoresizingMaskIntoConstraints="NO" id="nvD-db-WHS">
+                                <rect key="frame" x="113" y="197" width="262" height="470"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="470" id="FV9-td-Jmp"/>
+                                    <constraint firstAttribute="width" constant="262" id="uvX-yD-Ivf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SaG-5Z-FRK" firstAttribute="top" secondItem="YYX-OE-vNB" secondAttribute="bottom" constant="60" id="1dF-7p-mAA"/>
+                            <constraint firstItem="nvD-db-WHS" firstAttribute="bottom" secondItem="oCG-Qo-lP9" secondAttribute="bottom" id="8QE-uR-dPo"/>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="trailing" secondItem="oCG-Qo-lP9" secondAttribute="trailing" id="9nN-ST-wgP"/>
+                            <constraint firstItem="nvD-db-WHS" firstAttribute="trailing" secondItem="oCG-Qo-lP9" secondAttribute="trailing" id="CLI-n1-Sfq"/>
                             <constraint firstItem="YYX-OE-vNB" firstAttribute="centerX" secondItem="2hF-tn-PNF" secondAttribute="centerX" id="Ge5-k2-45t"/>
                             <constraint firstItem="v7t-Fl-WcO" firstAttribute="centerX" secondItem="2hF-tn-PNF" secondAttribute="centerX" id="LFQ-Lc-WkZ"/>
                             <constraint firstItem="c1K-CQ-DLQ" firstAttribute="top" secondItem="2hF-tn-PNF" secondAttribute="top" id="LMw-SS-m4A"/>
@@ -1242,6 +1251,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                     <connections>
                         <outlet property="choice1" destination="v7t-Fl-WcO" id="OoP-H0-zdh"/>
                         <outlet property="choice2" destination="SaG-5Z-FRK" id="cQd-ak-Aig"/>
+                        <outlet property="cop" destination="nvD-db-WHS" id="3fg-ot-8FG"/>
                         <outlet property="followCop" destination="G5K-89-Cpx" id="0dR-Jx-v61"/>
                         <outlet property="goInside" destination="cUP-3W-Uow" id="BeI-wr-Ssc"/>
                         <outlet property="tf" destination="YYX-OE-vNB" id="7YZ-8N-qZD"/>
@@ -1281,6 +1291,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
     </scenes>
     <resources>
         <image name="cathedral" width="556" height="796"/>
+        <image name="cop_fat" width="970" height="1861"/>
         <image name="prinson_broken" width="1668" height="2388"/>
         <image name="prison" width="1668" height="2388"/>
         <image name="restaurant" width="1668" height="2388"/>
@@ -1294,14 +1305,14 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cr9-bb-4pO"/>
+        <segue reference="d1l-36-FvD"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
         <segue reference="j4t-cP-7Hq"/>
         <segue reference="BSS-2Z-s3H"/>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="kJU-rm-7jU"/>
-        <segue reference="crb-2R-xTs"/>
+        <segue reference="3dy-Nm-FNa"/>
+        <segue reference="isz-S7-ju2"/>
     </inferredMetricsTieBreakers>
 </document>
