@@ -1279,9 +1279,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                         <color key="barTintColor" cocoaTouchSystemColor="lightTextColor"/>
                     </tabBar>
                     <connections>
+                        <segue destination="liW-k7-DWT" kind="relationship" relationship="viewControllers" id="P74-aY-D52"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rhB-6H-KgF"/>
                         <segue destination="o7C-dg-j0N" kind="relationship" relationship="viewControllers" id="8Ae-Ye-0qd"/>
-                        <segue destination="liW-k7-DWT" kind="relationship" relationship="viewControllers" id="P74-aY-D52"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06k-D4-bLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
