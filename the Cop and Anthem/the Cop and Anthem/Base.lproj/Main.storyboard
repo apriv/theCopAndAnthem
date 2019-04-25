@@ -460,6 +460,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-i0-3B9">
                                 <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waiter" translatesAutoresizingMaskIntoConstraints="NO" id="aUf-DT-9Il">
+                                <rect key="frame" x="0.0" y="142" width="216" height="525"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="2DP-SO-Yqh"/>
+                                    <constraint firstAttribute="height" constant="525" id="ude-8E-9lC"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-Ad-AL8">
                                 <rect key="frame" x="41.5" y="364" width="292" height="32"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -543,14 +550,18 @@
                             <constraint firstItem="hIo-i0-3B9" firstAttribute="leading" secondItem="fNB-bW-Jz3" secondAttribute="leading" id="JpC-cY-lDE"/>
                             <constraint firstItem="IQa-Ad-AL8" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="OnM-3x-noq"/>
                             <constraint firstItem="xc3-7y-Hku" firstAttribute="top" secondItem="fNB-bW-Jz3" secondAttribute="top" constant="90" id="evM-8n-t2j"/>
+                            <constraint firstItem="aUf-DT-9Il" firstAttribute="leading" secondItem="fNB-bW-Jz3" secondAttribute="leading" id="i7L-v4-0C5"/>
                             <constraint firstItem="7mO-1E-qHF" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="iBZ-wS-V8v"/>
                             <constraint firstItem="jUT-xX-Z1e" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="iif-La-RMb"/>
+                            <constraint firstItem="aUf-DT-9Il" firstAttribute="bottom" secondItem="fNB-bW-Jz3" secondAttribute="bottom" id="mWB-0m-nyo"/>
                             <constraint firstItem="fNB-bW-Jz3" firstAttribute="trailing" secondItem="hIo-i0-3B9" secondAttribute="trailing" id="pBq-cL-SPO"/>
                             <constraint firstItem="jUT-xX-Z1e" firstAttribute="top" secondItem="xc3-7y-Hku" secondAttribute="bottom" constant="60" id="prm-8C-94w"/>
                             <constraint firstItem="buf-jW-NDh" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="rGN-UI-qSu"/>
                             <constraint firstItem="xc3-7y-Hku" firstAttribute="centerX" secondItem="Yxm-7r-VCt" secondAttribute="centerX" id="sS6-Vj-rwC"/>
+                            <constraint firstItem="aUf-DT-9Il" firstAttribute="bottom" secondItem="fNB-bW-Jz3" secondAttribute="bottom" id="uo8-gP-bfF"/>
                             <constraint firstItem="buf-jW-NDh" firstAttribute="top" secondItem="xc3-7y-Hku" secondAttribute="bottom" constant="60" id="vq1-q9-chc"/>
                             <constraint firstItem="IQa-Ad-AL8" firstAttribute="top" secondItem="buf-jW-NDh" secondAttribute="bottom" constant="30" id="xay-7K-9pZ"/>
+                            <constraint firstItem="aUf-DT-9Il" firstAttribute="leading" secondItem="fNB-bW-Jz3" secondAttribute="leading" id="xlt-8M-aVQ"/>
                             <constraint firstItem="hIo-i0-3B9" firstAttribute="top" secondItem="Yxm-7r-VCt" secondAttribute="top" id="yot-bN-grD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fNB-bW-Jz3"/>
@@ -561,6 +572,7 @@
                         <outlet property="stepInsideBtn" destination="jUT-xX-Z1e" id="DIQ-hX-Qn5"/>
                         <outlet property="tf" destination="xc3-7y-Hku" id="LQW-Xg-GEg"/>
                         <outlet property="tryElseBtn" destination="buf-jW-NDh" id="pn3-Ko-wgB"/>
+                        <outlet property="waiter" destination="aUf-DT-9Il" id="ut1-ih-mpw"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Cr9-bb-4pO"/>
                     </connections>
                 </viewController>
@@ -808,7 +820,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKC-aj-Mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6607" y="-803"/>
+            <point key="canvasLocation" x="6004" y="-805"/>
         </scene>
         <!--Street Night-->
         <scene sceneID="CDB-ma-pb9">
@@ -1119,7 +1131,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHU-0O-59W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6924" y="109"/>
+            <point key="canvasLocation" x="6801" y="87"/>
         </scene>
         <!--Cathedral-->
         <scene sceneID="jeQ-7B-V1T">
@@ -1277,18 +1289,19 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="showcase" width="556" height="796"/>
         <image name="street_day" width="1668" height="2388"/>
         <image name="street_night" width="556" height="796"/>
+        <image name="waiter" width="304" height="474.33334350585938"/>
         <image name="women_austere" width="387.33334350585938" height="595.33331298828125"/>
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jg7-95-E8L"/>
+        <segue reference="Cr9-bb-4pO"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
         <segue reference="j4t-cP-7Hq"/>
         <segue reference="BSS-2Z-s3H"/>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="3dy-Nm-FNa"/>
+        <segue reference="kJU-rm-7jU"/>
         <segue reference="crb-2R-xTs"/>
     </inferredMetricsTieBreakers>
 </document>

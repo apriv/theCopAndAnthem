@@ -14,6 +14,7 @@ class RestaurantViewController: UIViewController {
     @IBOutlet weak var stepInsideBtn: UIButton!
     @IBOutlet weak var tryElseBtn: UIButton!
     @IBOutlet weak var tf: UITextView!
+    @IBOutlet weak var waiter: UIImageView!
     
     var stage = 0
     var count = 0
@@ -50,6 +51,7 @@ class RestaurantViewController: UIViewController {
             self.choice2.isHidden = true
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
+            self.waiter.isHidden = true
             tf.text = text[count]
         case 1:
             // waiter talk
@@ -57,6 +59,7 @@ class RestaurantViewController: UIViewController {
             self.choice2.isHidden = false
             self.tryElseBtn.isHidden = true
             self.stepInsideBtn.isHidden = true
+            self.waiter.isHidden = false
             choice1.setTitle("Walk inside direcly", for: .normal)
             choice2.setTitle("Cover your legs with coat", for: .normal)
             tf.text = "You think you look alright, but not sure about pants. \nYou choose to:"
@@ -79,6 +82,7 @@ class RestaurantViewController: UIViewController {
             self.stepInsideBtn.isHidden = false
         case 5:
             tf.text = text2[count2]
+            self.waiter.isHidden = true
             self.stepInsideBtn.isHidden = true
             self.tryElseBtn.isHidden = false
         default:
