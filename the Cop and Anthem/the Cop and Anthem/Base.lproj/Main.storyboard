@@ -39,9 +39,23 @@
                                     <constraint firstAttribute="height" constant="34" id="bun-kV-h5O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Begin Journey -&gt;"/>
+                                <state key="normal" title="Contninue -&gt;"/>
                                 <connections>
                                     <segue destination="fM8-kc-E5s" kind="show" identifier="toMenu" id="isz-S7-ju2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynI-co-DNe">
+                                <rect key="frame" x="101.5" y="238" width="172" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="hsy-wY-gx1"/>
+                                    <constraint firstAttribute="height" constant="34" id="wvW-hd-2fK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New Journey -&gt;"/>
+                                <connections>
+                                    <action selector="newPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0G-tD-sQM"/>
+                                    <segue destination="fM8-kc-E5s" kind="show" id="wPs-qy-5Cj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,10 +64,12 @@
                             <constraint firstItem="ehF-Dv-NJh" firstAttribute="top" secondItem="tJ4-dq-VA8" secondAttribute="bottom" constant="120" id="AHp-no-fhh"/>
                             <constraint firstItem="tJ4-dq-VA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JC0-2r-Xkc"/>
                             <constraint firstItem="0KL-lb-zTB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NVc-1I-823"/>
+                            <constraint firstItem="ehF-Dv-NJh" firstAttribute="top" secondItem="ynI-co-DNe" secondAttribute="bottom" constant="20" id="Ocb-Kx-eRS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0KL-lb-zTB" secondAttribute="trailing" id="dPq-Eb-HCJ"/>
                             <constraint firstItem="0KL-lb-zTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i9y-t4-5gk"/>
                             <constraint firstAttribute="bottom" secondItem="0KL-lb-zTB" secondAttribute="bottom" id="jkI-tC-QlL"/>
                             <constraint firstItem="tJ4-dq-VA8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="jmN-Ky-Nun"/>
+                            <constraint firstItem="ynI-co-DNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="laf-1q-Ddr"/>
                             <constraint firstItem="ehF-Dv-NJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXY-U3-c05"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

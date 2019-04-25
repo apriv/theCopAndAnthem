@@ -21,5 +21,11 @@ class ViewController: UIViewController {
         defaults.set(img_bools, forKey: "stored_bool_list")
     }
     
+    @IBAction func newPressed(_ sender: UIButton) {
+        let defaults = UserDefaults.standard
+        var img_bools =  [false,true,true,true,true,true,true,true,true]
+        defaults.set(img_bools, forKey: "stored_bool_list")
+    }
+    
 }
 
