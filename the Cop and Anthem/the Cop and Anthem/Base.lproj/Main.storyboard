@@ -858,6 +858,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3W-GS-i8I">
                                 <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292" id="0JE-xy-mhJ"/>
                                     <constraint firstAttribute="height" constant="128" id="j9K-M7-Yj5"/>
@@ -865,6 +866,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kwm-2H-Pxm" appends="YES" id="tV8-kW-gRf"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhi-GI-z3B">
                                 <rect key="frame" x="41.5" y="298" width="292" height="32"/>
@@ -877,6 +881,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <state key="normal" title="Choice 1">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="choice1Pressed:" destination="bbm-77-XTI" eventType="touchUpInside" id="iwj-R5-1Ve"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKf-Jh-JXX">
                                 <rect key="frame" x="41.5" y="360" width="292" height="32"/>
@@ -889,6 +896,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <state key="normal" title="Choice 2">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="choice2Pressed:" destination="bbm-77-XTI" eventType="touchUpInside" id="tHl-LO-1co"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
                                 <rect key="frame" x="41" y="421" width="292" height="36"/>
@@ -927,6 +937,11 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxi-WJ-XcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kwm-2H-Pxm">
+                    <connections>
+                        <action selector="Taptext:" destination="bbm-77-XTI" id="Rq5-bE-fPr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3940" y="86.806596701649184"/>
         </scene>
