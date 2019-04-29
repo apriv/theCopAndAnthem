@@ -890,6 +890,18 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
+                                <rect key="frame" x="41" y="421" width="292" height="36"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="kBV-PT-dXH"/>
+                                    <constraint firstAttribute="width" constant="292" id="ojZ-tP-AlH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Try something Else">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -907,6 +919,10 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                         <viewLayoutGuide key="safeArea" id="sKT-Dd-OkG"/>
                     </view>
                     <connections>
+                        <outlet property="choice1" destination="Rhi-GI-z3B" id="qfd-lU-ofl"/>
+                        <outlet property="choice2" destination="iKf-Jh-JXX" id="w96-L1-x4R"/>
+                        <outlet property="tf" destination="M3W-GS-i8I" id="DJt-fZ-t6I"/>
+                        <outlet property="tryElseBtn" destination="idC-rS-KZS" id="Rel-PI-jWo"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="d1l-36-FvD"/>
                     </connections>
                 </viewController>
@@ -944,7 +960,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <constraint firstAttribute="width" constant="292" id="tbe-4t-KCf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 1">
+                                <state key="normal" title="Find something">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
@@ -956,7 +972,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <constraint firstAttribute="height" constant="32" id="WyV-XH-BMs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Choice 2">
+                                <state key="normal" title="Try something else">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
@@ -1327,7 +1343,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vNV-GN-mca"/>
+        <segue reference="Ze5-YX-wCO"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
