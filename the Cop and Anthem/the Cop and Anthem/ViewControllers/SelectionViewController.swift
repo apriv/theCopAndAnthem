@@ -136,7 +136,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         // conditions to add a line
         let defaults = UserDefaults.standard
         var img_bools = defaults.object(forKey: "stored_bool_list") as? [Bool] ?? [true,true,true,true,true,true,true,true,false]
-        if (!img_bools[1] && !img_bools[2] && !img_bools[6]){
+        if (!img_bools[1] && !img_bools[2] && !img_bools[4] && !img_bools[5] && !img_bools[6]){
             places.append("Walk Around")
         }
 
