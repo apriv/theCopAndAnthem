@@ -890,8 +890,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
-                                <rect key="frame" x="41" y="421" width="292" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
+                                <rect key="frame" x="41.5" y="298" width="292" height="32"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="kBV-PT-dXH"/>
@@ -916,6 +916,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="bottom" secondItem="sKT-Dd-OkG" secondAttribute="bottom" id="gTa-lf-3GN"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="trailing" secondItem="sKT-Dd-OkG" secondAttribute="trailing" id="gi0-Wi-jLG"/>
                             <constraint firstItem="Rhi-GI-z3B" firstAttribute="centerX" secondItem="FqE-z7-OpD" secondAttribute="centerX" id="kJm-Gv-dAH"/>
+                            <constraint firstItem="idC-rS-KZS" firstAttribute="centerX" secondItem="FqE-z7-OpD" secondAttribute="centerX" id="nDM-MI-1eQ"/>
+                            <constraint firstItem="idC-rS-KZS" firstAttribute="top" secondItem="M3W-GS-i8I" secondAttribute="bottom" constant="60" id="oZS-du-uDU"/>
                             <constraint firstItem="iKf-Jh-JXX" firstAttribute="top" secondItem="Rhi-GI-z3B" secondAttribute="bottom" constant="30" id="wPt-Ph-pnr"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="top" secondItem="FqE-z7-OpD" secondAttribute="top" id="zwL-vv-Gz1"/>
                         </constraints>
@@ -1382,14 +1384,14 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ze5-YX-wCO"/>
+        <segue reference="d1l-36-FvD"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
         <segue reference="j4t-cP-7Hq"/>
         <segue reference="BSS-2Z-s3H"/>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="0Hn-YE-2is"/>
+        <segue reference="75A-eM-nzB"/>
         <segue reference="isz-S7-ju2"/>
     </inferredMetricsTieBreakers>
 </document>

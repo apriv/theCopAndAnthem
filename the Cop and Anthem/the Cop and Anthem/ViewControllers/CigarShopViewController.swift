@@ -46,7 +46,7 @@ class CigarShopViewController: UIViewController {
             bgImg.image = UIImage(named:"restaurant_umbrella")
         case 1:
             // find sth btn
-            tf.text = "find something to rob"
+            tf.text = "Find something to rob"
             tf.isHidden = false
             findBtn.isHidden = false
             tryBtn.isHidden = true
@@ -59,7 +59,7 @@ class CigarShopViewController: UIViewController {
             umbrellaBox.isHidden = false
         case 3:
             // found and end lines
-            tf.text = "found"
+            tf.text = "You take the umbrella. It belongs to you now."
             bgImg.image = UIImage(named:"restaurant_dark")
             tf.isHidden = false
             findBtn.isHidden = true
