@@ -991,13 +991,13 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DZ-HP-w60">
                                 <rect key="frame" x="0.0" y="459" width="67" height="208"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="HTW-3t-lfX"/>
                                     <constraint firstAttribute="height" constant="208" id="RVk-mI-okv"/>
                                 </constraints>
                                 <state key="normal" title="--">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.97020254299999997" green="0.79874784700000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="umbFound:" destination="OED-mk-yGd" eventType="touchUpInside" id="rzd-gH-hOf"/>
@@ -1382,7 +1382,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vNV-GN-mca"/>
+        <segue reference="Ze5-YX-wCO"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
