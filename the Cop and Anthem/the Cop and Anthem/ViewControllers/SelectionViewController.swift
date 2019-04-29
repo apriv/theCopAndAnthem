@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate {
+class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate,UISearchBarDelegate {
     
 
+    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet weak var Cells: ChoiceUiTableView!
     
     var places: [String] = ["Dine and dash",
@@ -19,17 +20,29 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
                             "//Rob someone",
                             "Take advantage of a lady"]
     let cellReuseIdentifier = "cell"
+    var search = [String]()
+    var searching = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.places.count
+        if searching{
+            return self.search.count
+        }else{
+            return self.places.count
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // create a new cell if needed or reuse an old one
         let cell:UITableViewCell = (self.Cells.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell?)!
-        
-        // set the text from the data model
-        cell.textLabel?.text = self.places[indexPath.row]
+        //Search
+        if searching{
+            cell.textLabel?.text = search[indexPath.row]
+        }
+        else{
+            // set the text from the data model
+            cell.textLabel?.text = places[indexPath.row]
+        }
         
         return cell
     }
@@ -84,6 +97,20 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
     }
     
+    
+    func searchBar(_ searchBar:UISearchBar,textDidChange searchText:String){
+            search = places.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+            searching = true
+            self.Cells.reloadData()
+        }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        searchBar.text = ""
+        Cells.reloadData()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -96,6 +123,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         // This view controller itself will provide the delegate methods and row data for the table view.
         Cells.delegate = self
         Cells.dataSource = self
+        searchBar.delegate = self
         
         
         // Set gesture to menu
