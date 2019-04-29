@@ -900,8 +900,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                     <action selector="choice2Pressed:" destination="bbm-77-XTI" eventType="touchUpInside" id="tHl-LO-1co"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
-                                <rect key="frame" x="41" y="421" width="292" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idC-rS-KZS">
+                                <rect key="frame" x="41.5" y="298" width="292" height="32"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="kBV-PT-dXH"/>
@@ -911,6 +911,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <state key="normal" title="Try something Else">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PwD-z1-Cfd" kind="show" id="75A-eM-nzB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -923,6 +926,8 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="bottom" secondItem="sKT-Dd-OkG" secondAttribute="bottom" id="gTa-lf-3GN"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="trailing" secondItem="sKT-Dd-OkG" secondAttribute="trailing" id="gi0-Wi-jLG"/>
                             <constraint firstItem="Rhi-GI-z3B" firstAttribute="centerX" secondItem="FqE-z7-OpD" secondAttribute="centerX" id="kJm-Gv-dAH"/>
+                            <constraint firstItem="idC-rS-KZS" firstAttribute="centerX" secondItem="FqE-z7-OpD" secondAttribute="centerX" id="nDM-MI-1eQ"/>
+                            <constraint firstItem="idC-rS-KZS" firstAttribute="top" secondItem="M3W-GS-i8I" secondAttribute="bottom" constant="60" id="oZS-du-uDU"/>
                             <constraint firstItem="iKf-Jh-JXX" firstAttribute="top" secondItem="Rhi-GI-z3B" secondAttribute="bottom" constant="30" id="wPt-Ph-pnr"/>
                             <constraint firstItem="bXq-LO-wy1" firstAttribute="top" secondItem="FqE-z7-OpD" secondAttribute="top" id="zwL-vv-Gz1"/>
                         </constraints>
@@ -959,6 +964,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JS-y1-0D1">
                                 <rect key="frame" x="41.5" y="110" width="292" height="128"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292" id="2Sp-ZW-iJi"/>
                                     <constraint firstAttribute="height" constant="128" id="MMG-db-IQA"/>
@@ -966,6 +972,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="t8T-pp-kdF" appends="YES" id="lu1-hD-ci1"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfC-Zx-Ba4">
                                 <rect key="frame" x="41.5" y="298" width="292" height="32"/>
@@ -978,6 +987,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <state key="normal" title="Find something">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="findPressed:" destination="OED-mk-yGd" eventType="touchUpInside" id="Pg0-c0-Vix"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD7-Nq-aCs">
                                 <rect key="frame" x="41.5" y="360" width="292" height="32"/>
@@ -990,16 +1002,35 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                                 <state key="normal" title="Try something else">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PwD-z1-Cfd" kind="show" id="0Hn-YE-2is"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DZ-HP-w60">
+                                <rect key="frame" x="0.0" y="459" width="67" height="208"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="HTW-3t-lfX"/>
+                                    <constraint firstAttribute="height" constant="208" id="RVk-mI-okv"/>
+                                </constraints>
+                                <state key="normal" title="--">
+                                    <color key="titleColor" red="0.97020254299999997" green="0.79874784700000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="umbFound:" destination="OED-mk-yGd" eventType="touchUpInside" id="rzd-gH-hOf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PD7-Nq-aCs" firstAttribute="top" secondItem="zfC-Zx-Ba4" secondAttribute="bottom" constant="30" id="2rg-Yd-ndG"/>
                             <constraint firstItem="Ra0-LA-reG" firstAttribute="bottom" secondItem="cMZ-an-7RO" secondAttribute="bottom" id="8Mr-XN-AmD"/>
+                            <constraint firstItem="7DZ-HP-w60" firstAttribute="bottom" secondItem="cMZ-an-7RO" secondAttribute="bottom" id="ADy-yO-UpX"/>
                             <constraint firstItem="zfC-Zx-Ba4" firstAttribute="centerX" secondItem="vjV-fy-SqY" secondAttribute="centerX" id="BtL-g8-sKR"/>
                             <constraint firstItem="8JS-y1-0D1" firstAttribute="top" secondItem="cMZ-an-7RO" secondAttribute="top" constant="90" id="MMz-Jf-2Wq"/>
                             <constraint firstItem="Ra0-LA-reG" firstAttribute="leading" secondItem="cMZ-an-7RO" secondAttribute="leading" id="bda-Wb-M9a"/>
                             <constraint firstItem="cMZ-an-7RO" firstAttribute="trailing" secondItem="Ra0-LA-reG" secondAttribute="trailing" id="eC5-OH-kgT"/>
+                            <constraint firstItem="7DZ-HP-w60" firstAttribute="leading" secondItem="cMZ-an-7RO" secondAttribute="leading" id="gZw-sd-bP3"/>
                             <constraint firstItem="PD7-Nq-aCs" firstAttribute="centerX" secondItem="vjV-fy-SqY" secondAttribute="centerX" id="kh1-KQ-Mdx"/>
                             <constraint firstItem="8JS-y1-0D1" firstAttribute="centerX" secondItem="vjV-fy-SqY" secondAttribute="centerX" id="lka-05-hvD"/>
                             <constraint firstItem="zfC-Zx-Ba4" firstAttribute="top" secondItem="8JS-y1-0D1" secondAttribute="bottom" constant="60" id="qEs-Tv-wxb"/>
@@ -1008,10 +1039,20 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                         <viewLayoutGuide key="safeArea" id="cMZ-an-7RO"/>
                     </view>
                     <connections>
+                        <outlet property="bgImg" destination="Ra0-LA-reG" id="CRY-Y8-1SP"/>
+                        <outlet property="findBtn" destination="zfC-Zx-Ba4" id="8wZ-wB-JjD"/>
+                        <outlet property="tf" destination="8JS-y1-0D1" id="wXg-eY-hjT"/>
+                        <outlet property="tryBtn" destination="PD7-Nq-aCs" id="BrC-7V-uGX"/>
+                        <outlet property="umbrellaBox" destination="7DZ-HP-w60" id="c3t-ei-wgE"/>
                         <segue destination="74S-qQ-6iU" kind="show" identifier="toMenu" id="Ze5-YX-wCO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCA-lC-HbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="t8T-pp-kdF">
+                    <connections>
+                        <action selector="tfPressed:" destination="OED-mk-yGd" id="dGs-8g-zCy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4671.1999999999998" y="86.806596701649184"/>
         </scene>
@@ -1358,14 +1399,14 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ze5-YX-wCO"/>
+        <segue reference="d1l-36-FvD"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
         <segue reference="j4t-cP-7Hq"/>
         <segue reference="BSS-2Z-s3H"/>
         <segue reference="Dvn-iF-X8a"/>
-        <segue reference="3dy-Nm-FNa"/>
+        <segue reference="75A-eM-nzB"/>
         <segue reference="isz-S7-ju2"/>
     </inferredMetricsTieBreakers>
 </document>
