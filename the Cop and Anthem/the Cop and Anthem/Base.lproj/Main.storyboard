@@ -394,17 +394,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prinson_broken" translatesAutoresizingMaskIntoConstraints="NO" id="IxT-v1-IIt">
-                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" text="What do you want to try next to get yourself in prison?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-0P-oB9">
                                 <rect key="frame" x="46" y="110" width="283" height="64"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="283" id="JaQ-fj-nG6"/>
                                     <constraint firstAttribute="height" constant="64" id="kZV-r5-Xew"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Pf4-D4-Bp1" appends="YES" id="Mlc-Zb-cEg"/>
+                                </connections>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Npv-3q-EES" customClass="ChoiceUiTableView" customModule="the_Cop_and_Anthem" customModuleProvider="target">
                                 <rect key="frame" x="53" y="234" width="269" height="200"/>
@@ -443,6 +448,7 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="GMO-0P-oB9" firstAttribute="top" secondItem="CpG-gf-DXR" secondAttribute="top" constant="90" id="3Qv-Yg-ErN"/>
                             <constraint firstItem="Npv-3q-EES" firstAttribute="top" secondItem="GMO-0P-oB9" secondAttribute="bottom" constant="60" id="GBB-kY-2OY"/>
@@ -454,6 +460,9 @@
                             <constraint firstItem="IxT-v1-IIt" firstAttribute="bottom" secondItem="CpG-gf-DXR" secondAttribute="bottom" id="ly8-jZ-h9E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CpG-gf-DXR"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eLx-8I-4Rk" appends="YES" id="Jct-On-ssH"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Cells" destination="Npv-3q-EES" id="euB-6S-hIs"/>
@@ -468,8 +477,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pf4-D4-Bp1">
+                    <connections>
+                        <action selector="tfTouched:" destination="PwD-z1-Cfd" id="bLP-K8-qjQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eLx-8I-4Rk">
+                    <connections>
+                        <action selector="imgTuched:" destination="PwD-z1-Cfd" id="wip-9D-dC0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1834" y="976"/>
+            <point key="canvasLocation" x="1832.8" y="975.56221889055485"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="tk7-6F-H4h">

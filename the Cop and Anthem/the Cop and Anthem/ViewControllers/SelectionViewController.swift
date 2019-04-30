@@ -143,6 +143,15 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         
     }
     
+    @IBAction func imgTuched(_ sender: UITapGestureRecognizer) {
+        searchBar.resignFirstResponder()
+    }
+    
+    
+    @IBAction func tfTouched(_ sender: UITapGestureRecognizer) {
+        searchBar.resignFirstResponder()
+    }
+    
     // function used for swipe back to menu
     @objc func handleSwipe(sender:UISwipeGestureRecognizer){
         if (sender.state == .ended){
