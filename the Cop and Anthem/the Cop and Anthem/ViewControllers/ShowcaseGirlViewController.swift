@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ShowcaseGirlViewController: UIViewController {
+    var musicEffect: AVAudioPlayer = AVAudioPlayer()
     var stage = 0
     var count = 0
     let text = ["Cop: Where's the man that did that?",
@@ -33,6 +35,14 @@ class ShowcaseGirlViewController: UIViewController {
         view.addGestureRecognizer(upSwipe)
         
         gotoStage()
+        
+        let musicFile = Bundle.main.path(forResource: "Glass Broken", ofType: ".mp3")
+        do{
+            try musicEffect = AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicFile!))
+        }
+        catch{
+            print(error)
+        }
     }
     // do stuff accoring int stage
     func gotoStage(){
@@ -93,6 +103,7 @@ class ShowcaseGirlViewController: UIViewController {
     
     @IBAction func tabbing(_ sender: UITapGestureRecognizer) {
         stage = 2
+        musicEffect.play()
         bgimg.image = UIImage(named:"showcase_broken")
         gotoStage()
     }
