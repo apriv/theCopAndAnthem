@@ -11,7 +11,15 @@ import UIKit
 class CigarShopViewController: UIViewController {
     var stage = 0
     var count = 0
-    
+    let text = ["The Man: My unbrella!",
+                "You: Oh, is it?",
+                "You: Why don’t you call a cop? I took it. Your umbrella!",
+                "The Man: I--",
+                "The Man: That is—-you know how these things happen—-",
+                "The Man: I—-if that’s your umbrella I’m very sorry—-I found it this morning in a restaurant—-",
+                "The Man: If you say it’s yours—-I hope you’ll—-",
+                "You: It's Mine!"]
+    lazy var size = text.count
     @IBOutlet weak var tf: UITextView!
     @IBOutlet weak var findBtn: UIButton!
     @IBOutlet weak var tryBtn: UIButton!
@@ -38,7 +46,7 @@ class CigarShopViewController: UIViewController {
         switch stage{
         case 0:
             // hide choices, bg story
-            tf.text = "you find a cigar shop."
+            tf.text = "You want to rob someone to put yourself into the jail."
             tf.isHidden = false
             findBtn.isHidden = true
             tryBtn.isHidden = true
@@ -59,11 +67,16 @@ class CigarShopViewController: UIViewController {
             umbrellaBox.isHidden = false
         case 3:
             // found and end lines
-            tf.text = "You take the umbrella. It belongs to you now."
+            tf.text = text[count]
             bgImg.image = UIImage(named:"restaurant_dark")
             tf.isHidden = false
             findBtn.isHidden = true
-            tryBtn.isHidden = false
+            if(count == size-1){
+                self.tryBtn.isHidden = false
+            }
+            else{
+                self.tryBtn.isHidden = true
+            }
             umbrellaBox.isHidden = true
         default:
             // do nothing
@@ -84,8 +97,14 @@ class CigarShopViewController: UIViewController {
     @IBAction func tfPressed(_ sender: UITapGestureRecognizer) {
         if(stage==0){
             stage = 1
-            gotoStage()
+            
         }
+        else if(stage == 3){
+            if (count<size-1){
+                count = count+1
+            }
+        }
+        gotoStage()
     }
     
     // function used for swipe back to menu
