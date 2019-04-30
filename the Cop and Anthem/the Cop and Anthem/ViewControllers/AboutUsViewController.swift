@@ -9,11 +9,13 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
-
+    @IBOutlet weak var tf: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tf.isUserInteractionEnabled = false
     }
     
 

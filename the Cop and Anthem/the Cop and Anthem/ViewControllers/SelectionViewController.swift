@@ -16,8 +16,8 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     var places: [String] = ["Dine and dash",
                             "Break a showcase",
-                            "//Break the peace",
-                            "//Rob someone",
+                            "Break the peace",
+                            "Rob someone",
                             "Take advantage of a lady"]
     let cellReuseIdentifier = "cell"
     var search = [String]()

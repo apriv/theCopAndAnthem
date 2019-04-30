@@ -839,6 +839,9 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
                         <viewLayoutGuide key="safeArea" id="ts1-Hv-gO0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="Rki-sn-SZd"/>
+                    <connections>
+                        <outlet property="tf" destination="0Mv-NB-7HZ" id="WMT-2o-aHM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKC-aj-Mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1399,7 +1402,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d1l-36-FvD"/>
+        <segue reference="vNV-GN-mca"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
