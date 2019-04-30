@@ -13,6 +13,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet weak var Cells: ChoiceUiTableView!
+    @IBOutlet weak var image: UIImageView!
     
     var places: [String] = ["Dine and dash",
                             "Break a showcase",
@@ -110,6 +111,11 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         Cells.reloadData()
     }
     
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        searchBar.resignFirstResponder()
+        print(1)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +130,7 @@ class SelectionViewController: UIViewController,UITableViewDelegate,UITableViewD
         Cells.delegate = self
         Cells.dataSource = self
         searchBar.delegate = self
+        image.isUserInteractionEnabled = true
         
         
         // Set gesture to menu

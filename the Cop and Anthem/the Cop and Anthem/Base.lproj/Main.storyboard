@@ -395,6 +395,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prinson_broken" translatesAutoresizingMaskIntoConstraints="NO" id="IxT-v1-IIt">
                                 <rect key="frame" x="0.0" y="0.0" width="375.00000000000045" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gco-oq-VWw" appends="YES" id="2nq-Mf-UfA"/>
+                                </connections>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="interactive" editable="NO" text="What do you want to try next to get yourself in prison?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-0P-oB9">
                                 <rect key="frame" x="46" y="110" width="283" height="64"/>
@@ -457,6 +461,7 @@
                     </view>
                     <connections>
                         <outlet property="Cells" destination="Npv-3q-EES" id="euB-6S-hIs"/>
+                        <outlet property="image" destination="IxT-v1-IIt" id="S60-v0-nqa"/>
                         <outlet property="searchBar" destination="kGy-cx-zPc" id="duJ-XD-cl8"/>
                         <segue destination="mqm-yW-tF0" kind="show" identifier="toRestaurant" id="Dvn-iF-X8a"/>
                         <segue destination="kbc-2L-bGI" kind="show" identifier="toShowcase" id="BSS-2Z-s3H"/>
@@ -468,6 +473,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2C-3p-Ecj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gco-oq-VWw">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="PwD-z1-Cfd" id="lLt-SU-MDu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1834" y="976"/>
         </scene>
@@ -1402,7 +1412,7 @@ Developer: Qianyu Zhou                    Muzhen Li  Artist:        Qianhu
         <image name="women_passerby" width="387" height="550"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EXQ-3t-d1s"/>
+        <segue reference="vNV-GN-mca"/>
         <segue reference="oiu-D3-hZs"/>
         <segue reference="pYO-gH-tok"/>
         <segue reference="knp-4e-Ec6"/>
